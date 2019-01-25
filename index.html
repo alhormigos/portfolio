@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Alexandre Hormigos | Développeur Web</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="OwlCarousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="OwlCarousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- Scripts Js -->
+    <script src="keyBoardEffect.js"></script>
+    <script src="scrollingAnimation.js"></script>
+    <script src="tilesAnimation.js"></script>
+    <script src="projectDescriptionAnimation.js"></script>
+</head>
+<body>
+    <nav>
+        <ul >
+            <li class="nav" style="display : none;"><a href="#home">Accueil</a></li>
+            <li class="nav" style="display : none;"><a href="#skills">Compétences</a></li>
+            <li class="nav" style="display : none;"><a href="#project">Projets</a></li>
+            <li class="nav" style="display : none;">Mon parcours</li>
+            <li class="nav" style="display : none;">À propos</li>
+        </ul>
+    </nav>
+    <section id="main">
+        <section id="home">
+            <div id="container-logo" class="float-left">
+                <div id="logo" style="display: none;">
+                    <div id="big-title" style="display: none;">
+                        <hr class="logo-deco"/>
+                        Alexandre Hormigos
+                    </div>
+                    <div id="little-title" style="display: none;">
+                        Développeur Web
+                        <hr class="logo-deco" style="margin-top: 20px;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container-code">
+                <div class="class-bloc typewriter" id="codeClassPerson">
+                    <span class="blue">public class</span> <span class="light-green">Presentation</span> { <br/><br/>
+
+                    <div class="indentation">
+                        <span class="blue">private string</span> <span class="white">_name</span>; <br/><br/>
+                
+                        <span class="blue">public</span> <span>Person</span>(<span class="blue">string</span>  <span>name</span>) {<br/>
+                            <div class="indentation">
+                                <span class="white">_name = name</span>;
+                            </div>
+                            }
+                        <br/><br/>
+
+                        <span class="blue">public string</span> <span>Name</span>(<span class="blue">string</span>  <span>name</span>) {<br/>
+                            <div class="indentation">
+                                <span class="blue">get</span> { <span class="blue">return</span> _name; }<br/>
+                                <span class="blue">set</span> { <span class="white"></span>_name = </span> <span class="blue">value</span>; }
+                            </div>
+                            }
+                        <br/>
+                    </div>
+                    }<br/><br/>
+
+                    <span class="blue">public class</span> <span class="light-green">Program</span> { <br/><br/>
+
+                    <div class="indentation">
+                        <span class="blue">static void</span> <span class="white">main</span>(<span class="blue">string</span>[]  <span>args</span>) {<br/><br/>
+                        <div class="indentation">
+                            <span class="light-green">Person</span> <span class="white">me = </span> <span class="blue">new </span> <span class="light-green">Person</span>(<span class="red">"Alexandre Hormigos"</span>);<br/><br/>
+                            <span class="blue">if</span>( me.Name == <span class="red">"Alexandre Hormigos"</span> ) {<br/>
+                                <div class="indentation">
+                                    <span class="light-green">Console</span><span class="white">.WriteLine</span>( me.Name );<br/>
+                                    <span class="light-green">Console</span><span class="white">.WriteLine</span>( <span class="red">"Profession : Développeur Web"</span>);<br/>
+                                    <span class="light-green">Console</span><span class="white">.WriteLine</span>( <span class="red">"Lieu de travail : Secours Populaire Français"</span>);<br/>
+                                </div>
+                                
+                            }<br/>
+                            <span class="blue">else</span> {<br/>
+                                <div class="indentation">
+                                        <span class="blue">throw new</span> <span class="light-green">Exception</span>( <span class="red">"Vous êtes la bienvenue quans même !!!"</span>);<br/>
+                                </div>
+                            }
+                        </div>
+                        }
+                    </div>
+                        
+                    <br/>}    
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div id="skills-title" style="display : none;">
+                <h2 style="display : none;">COMPÉTENCES</h2>
+                <hr class="title-deco" style="display : none;" />
+                <h3 style="display : none;">Ce que je sais faire</h3>
+            </div>
+            
+            <div class="container-content" id="container-skills">
+                <div class="children-content" style="display : none;">
+                    <i class="material-icons">create</i>
+                    <h4>WEB DESIGN</h4>
+                    <p>Réalisation de site web responsive, animation avec la gestion du DOM, utilisation d'AJAX, refonte de la partie graphique de site web</p>
+                </div>
+                <div class="children-content" style="display : none;">
+                        <i class="material-icons">code</i>
+                        <h4>DÉVELOPPEMENT</h4>
+                        <p>Utilisation de la technologie ASP.Net (WebForms et MVC) et C#, 
+                           programmation orientée objet (POO), 
+                           ADO.Net et Entity FrameWork pour la liaison avec la base de donnée, 
+                           Utilisation de Reporting Services pour la création de rapports téléchargeable.
+                        </p>
+                </div>
+                <div class="children-content" style="display : none;">
+                        <i class="material-icons">storage</i>
+                        <h4>BASE DE DONNÉES</h4>
+                        <p>Utilisation de la technologie MicroSoft SQL Server pour la gestion des bases de données.
+                           Rédaction de requêtes simples et imbriquées, utilisation des procédures stockées, 
+                           création de base de données relationnelles, utilisation de la technologie Full Text Search 
+                           pour la recherche par mot-clé.
+                        </p>
+                </div>
+                <div class="children-content" style="display : none;">
+                        <i class="material-icons">school</i>
+                        <h4>FORMATION</h4>
+                        <p>Mise en place d'atelier formation et formation dans différents cadres et contextes. 
+                           Organisation et mise en place des formations (mailing, appel, préparation).
+                           Présentation et organisation de débat lors de ces formations.
+                        </p>
+                </div>
+                <div class="children-content" style="display : none;">
+                        <i class="material-icons">info</i>
+                        <h4>COMPÉTENCES ANNEXES WEB</h4>
+                        <p>
+                           Java (Swing, JEE, application n-tiers), PHP et Node Js (Notions).
+                           Visual Basic (Utilisation dans la technologie Reporting Services, Réalisation d'un jeu simple).
+                           Angular (Conception d'une mini-application type réseau social).
+                           Babylon Js (Conception d'un mini-jeu en 3D en JavaScript).
+                        </p>
+                </div>
+                <div class="children-content" style="display : none;">
+                        <i class="material-icons">event_note</i>
+                        <h4>GESTION DES PROJETS</h4>
+                        <p>
+                           Rédaction de rapport préliminaire avant la mise en place d'une nouvelle solution technique.
+                           Élaboration d'un calendrier prévisionnel.
+                           Organisation de réunions préalables à la phase de développement du projet.
+                           Évolution et correction prise en compte lors du cycle de développement du projet. 
+                        </p>
+                </div>
+                <!-- <div id="children-content-picture" class="children-content">
+                    <img id="skills-logo" src="../img/computer.jpg" alt="computer">
+                </div> -->
+            </div>
+        </section>
+        <section id="project">
+            <div id="project-title" style="display : none;">
+                <h2 style="display : none;">PROJETS</h2>
+                <hr class="title-deco" style="display : none;" />
+                <h3 style="display : none;">Voici quelques projets sur lesquels j'ai travaillé, professionnels comme personnels</h3>
+            </div>
+            <div class="project-container-content">
+                <div id="1" class="project-children-content" style="display : none;" >
+                    <div id="picture-title-1" class="picture-project-title" style="display: none;"><p>Atrium : la charte de confidentialité</p></div>
+                    <img class="picture-project" src="../img/Charte_Confidential.JPG" alt="Charte_Confidential">
+                </div>
+                <div id="2" class="project-children-content" style="display : none;" >
+                    <div id="picture-title-2" class="picture-project-title" style="display: none;"><p>Atrium : le mini-FrameWork pour PopFormulaire</p></div>
+                    <img class="picture-project" src="../img/PopFormulaire.JPG" alt="PopFormulaire">
+                </div>
+                <div id="3" class="project-children-content" style="display : none;" >
+                    <div id="picture-title-3" class="picture-project-title" style="display: none;" ><p>Atrium : la barre de recherche dynamique</p></div>
+                    <img class="picture-project" src="../img/Dynamic_Search_Bar.jpg" alt="Dynamic_Search_Bar">
+                </div>
+                <div id="4" class="project-children-content" style="display : none;" >
+                    <div id="picture-title-4" class="picture-project-title" style="display: none;"><p>Babylon Js : le lapin Demoniak</p></div>
+                    <img class="picture-project" src="../img/lapin_demoniak.jpg" alt="lapins_demoniak">
+                </div>
+                <div id="5" class="project-children-content" style="display : none;" >
+                    <div id="picture-title-5" class="picture-project-title" style="display: none;"><p>Visual Basic : le fructos Game</p></div>
+                    <img class="picture-project" src="../img/fruits.jpg" alt="fruits">
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="projects-detailled-description" style="display: none;">
+        <div id="project-detailled-description-close">
+            <img id="picture-detailled-description-close" src="../img/closing-cross.png" alt="close_window">
+        </div>
+        <div id="projects-detailled-description-mini-framework">
+            <div id="projects-detailled-description-mini-framework-container-picture">
+                <img id="projects-detailled-description-mini-framework-picture" src="../img/PopFormulaire_MiniFrameWork.JPG" alt="mini-FrameWork-PopFormulaire">
+            </div>
+            <div id="projects-detailled-description-mini-framework-container-description">
+                <h1>MISE EN PLACE D'UN MINI-FRAMEWORK POUR POP-FORMULAIRE</h1>
+                <!-- Owl Carousel plugin used -->
+                <div id="sync1" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <h5>Le mini-framework, un besoin pas si évident au départ :</h5>
+                        <p>
+                            Ce projet part d’un besoin qui s’est développé au cours du temps.
+                        </p>
+                        <p>
+                            En effet, nous avons constaté que plusieurs questionnaires récurrents demandaient un développement 
+                            trop spécifiques car le besoin étaient abordés d’un point de vue qui n’était pas assez globale à première vue.
+                        </p>
+                        <p>
+                            Bien sûr un outil existe déjà dans la plateforme Atrium, Wysuform, 
+                            mais lors des réunions que j’ai eue avec les différents acteurs de la mise en place de ces questionnaires, 
+                            cet outil est difficile à maîtriser et les informations obtenues sont difficilement exploitables (Document CSV) 
+                            pour une personne non-initiée.
+                        </p>
+                        <p>
+                            La mise en place du projet s’est dessiné au fur et à mesure de l’avancement des réunions avec le métier, 
+                            soit les personnes concernées par le projet (responsable de la Solidarité France, des Villages Copains du Monde, etc..).
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>La co-construction, grande dessinatrice de l’idée du mini-framework…  :</h5>
+                        <p>
+                            À la suite des multiples réunions que j’ai eu avec le métier, 
+                            nous avons organisé une réunion préalable à la mise en place du projet. 
+                        </p>
+                        <p>
+                            Plusieurs idées, venant de ma part mais aussi de mon responsable, 
+                            de mon tuteur ont été étudiés au cours de cette mise au point 
+                            (éditeur « light » de questionnaire, générateur de rapport via l’outil Wysuform, etc…). 
+                        </p>
+                        <p>
+                            Au cours de cette réunion, et après avoir demandé avis au Directeur de la Division Informatique, 
+                            nous sommes arrivés à un consensus de l’ensemble de ces idées, 
+                            la mise en place d’un mini-framework pour les questionnaires récurrents. 
+                        </p>
+                        <p>
+                            En effet, il était important de standardiser, faciliter l’édition des questionnaires sans réinventer 
+                            la roue et l’éditeur Wysuform qui est très complet. 
+                            De plus, si nous laissons trop de liberté de manœuvre au métier, 
+                            l’exploitation des données risque de devenir de plus en plus complexe au cours du cycle de vie du projet.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>… Mais aussi motrice des objectifs du projet :</h5>
+                        <p>
+                            Ce projet est né d’une co-construction et d’une idée qui s’est construite en équipe, 
+                            la mise en place d’un framework qui facilitera l’édition de formulaire pour notre propre équipe interne. 
+                            L’objectif principal reste de faciliter l’édition de formulaire. 
+                        </p>
+                        <p>
+                            Néanmoins, nous voulons, tout en standardisant l’organisation de la gestion des données, 
+                            garder la maîtrise de ce qui est développé dans l’application. 
+                        </p>
+                        <p>
+                            C’est la raison pour laquelle ce framework nous est directement destiné 
+                            mais qu’il servira forcément au métier indirectement 
+                            car il aura un résultat final beaucoup plus rapide qu’auparavent.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>La centralisation des données, l’enjeu principal :</h5>
+                        <p>
+                            L’enjeu est centrale pour le module de l’application pour lequel ce framework a été developpée, « PopFormulaire ». 
+                        </p>
+                        <p>
+                            En effet, avant la réalisation du projet, pour chaque questionnaire un nouveau modèle de donnée était créé. 
+                            Le problème, c’est qu’au cours du temps, on se retrouve avec un modèle complexe à gérer car trop spécifique 
+                            pour chaque questionnaire.  
+                        </p>
+                        <p>
+                            Ainsi, l’enjeu est la simplification du modèle de donnée mais aussi une optimisation de la maintenance 
+                            du code par une refactorisation globale de ce dernier.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>La mise en place d’un mini-Framework, un projet sur plusieurs étapes :</h5>
+                        <p>
+                            On comprend facilement que la mise en place de ce mini-framework permet de centraliser 
+                            où la donnée est stockée grâce à la création d’un modèle de donnée unique pour ce type de questionnaire. 
+                            Il s’agit de la 1ère étape sur laquelle j’ai travaillé sur ce projet.
+                        </p>
+                        <p>
+                            La 2ème étape consistait en une réorganisation globale côté code, 
+                            avec une refactorisation de l’ensemble du code utilisé pour la génération des questionnaires, 
+                            de la partie administration, de la génération des rapports.
+                        </p>
+                        <p>
+                            La 3ème étape consistait à la mise en place d’une automatisation de l’accessibilité à l’information 
+                            pour la partie vue du formulaire. 
+                            L’information de la vue est pilotée suivant l’organisation de l’information côté Base de donnée, 
+                            le Modèle, et non le contraire. C’est une conception hybride entre le spécifique et l’éditeur pure de questionnaire.
+                        </p>
+                        <p>
+                            La dernière étape consistait à affiner et à réadapter l’interface suivant cette réorganisation 
+                            de l’accessibilité aux questionnaires récurrent, notamment au niveau du module d’administration 
+                            mais aussi au niveau du reporting, globale comme spécifique par structure 
+                            (fédérations appartentant au Secours Populaire Français).
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>Le mini-framework, un projet sans résultat visible mais avec de grandes conséquences  :</h5>
+                        <p>
+                            Actuellement, le projet en est à sa phase finale. 
+                            Nous avons constaté un gain de productivité non négligeable par rapport à notre ancienne façon 
+                            de faire de l’ordre du double voire du triple.
+                        </p>
+                        <p>
+                            De plus, nous avons constaté très rapidement que les futures évolutions que l’on aimerait 
+                            mettre en place à terme seront plus facile à implémenter 
+                            car le travail de refactorisation du code nous le permettra.
+                        </p>
+                        <p>
+                            Enfin, concernant le métier, nous devons, prochainement, nous remettre en contact 
+                            avec lui afin de commencer à utiliser cet outil qui sera autant utile pour nous que pour le métier.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>Un futur ouvert vers une grande évolutivité :</h5>
+                        <p>
+                            Ce projet, de par sa philosophie, nous donnera la possibilité d’aller plus loin 
+                            dans ce qui a déjà été fait, comme la mise en place d’un véritable éditeur finale 
+                            mais à notre seule disposition afin de garder le contrôle de la gestion de l’information.
+                        </p>
+                        <p>
+                            De plus, comme la maintenabilité du code est plus optimale que par le passé, 
+                            nous pouvons plus sereinement envisager la migration du code de ce projet 
+                            vers une technologie plus récente que celle que nous utilisons aujourd’hui (passage du WebForm au MVC Classique/Core).
+                        </p>
+                        <p>
+                            Ce projet, comme beaucoup des projets que j’ai mené, est amené à évoluer et à rester vivant tout au long de son cycle de vie.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>Une étape importante vers une véritable autonomie professionnelle :</h5>
+                        <p>
+                            Ce projet fait partie de ceux qui m’ont marqué pour plusieurs raisons. 
+                        </p>
+                        <p>
+                            Avant de commmencer ce projet, je ne savais pas encore où j’en étais au niveau 
+                            de ma progression en terme de compétences, techniques comme humaine. 
+                        </p>
+                        <p>
+                            Tout au long de ce projet, mon tuteur/responsable m’a donné des objectifs précis à atteindre 
+                            tout en me laissant une grande autonomie. Il s’agissait d’un cap important à franchir pour moi comme pour mon tuteur. 
+                        </p>
+                        <p>
+                            Tout au long de ce projet, mon tuteur/responsable m’a donné des objectifs précis à atteindre 
+                            tout en me laissant une grande autonomie. Il s’agissait d’un cap important à franchir pour moi comme pour mon tuteur. 
+                        </p>
+                        <p>
+                            Par exemple, mon m’a demandé d’établire un planning prévisionnel de livrable sans me donner d’indications particulières. 
+                            J’ai ainsi été surpris de constater que j’avais été beaucoup plus rapide que je l’avais imaginé. 
+                        </p>
+                        <p>
+                            Ce projet est parmi celui qui m’a donné le plus de capital confiance quand à mes capacité à mener un projet 
+                            de bout en bout et ce de manière autonome, sans avoir une aide constante de l’extérieur. 
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h5>Compétences utilisées :</h5>
+                        <ul>
+                            <li>
+                                Organiser une réunion (Sujet, organisation, relance, gestion du temps, mailing, etc…)
+                            </li>
+                            <li>
+                                Mettre en place un modèle de donnée (MCD, Scripts SQL)
+                            </li>
+                            <li>
+                                Refactorisation du code de l’application (C# et ASP.Net WebForm)
+                            </li>
+                            <li>
+                                Reconception du reporting (SSRS « Reporting Service »)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                  
+                <div id="sync2" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <h1>1</h1></div>
+                    <div class="item">
+                        <h1>2</h1></div>
+                    <div class="item">
+                        <h1>3</h1></div>
+                    <div class="item">
+                        <h1>4</h1></div>
+                    <div class="item">
+                        <h1>5</h1></div>
+                    <div class="item">
+                        <h1>6</h1></div>
+                    <div class="item">
+                        <h1>7</h1></div>
+                    <div class="item">
+                        <h1>8</h1></div>
+                    <div class="item">
+                        <h1>9</h1></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
