@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $( "#3").click(function(e) {
+    $( "#2").click(function(e) {
         $("#projects-detailled-description").fadeIn(500);
     });
 
