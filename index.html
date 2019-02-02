@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="OwlCarousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!-- jQuery -->
-    <script src="jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <!-- Owl Carousel -->
-    <script src="owl.carousel.min.js"></script>
+    <script src="OwlCarousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <!-- Scripts Js -->
     <script src="keyBoardEffect.js"></script>
     <script src="scrollingAnimation.js"></script>
@@ -24,7 +24,8 @@
     <nav>
         <ul >
             <li class="nav" style="display : none;"><a href="#home">Accueil</a></li>
-            <li class="nav" style="display : none;"><a href="#skills">Compétences</a></li>
+            <li class="nav" style="display : none;"><a href="#quality">Qualités personnelles</a></li>
+            <li class="nav" style="display : none;"><a href="#skills">Compétences techniques</a></li>
             <li class="nav" style="display : none;"><a href="#project">Projets</a></li>
             <li class="nav" style="display : none;">Mon parcours</li>
             <li class="nav" style="display : none;">À propos</li>
@@ -96,20 +97,84 @@
                 </div>
             </div>
         </section>
+        <section id="quality">
+            <div id="quality-title">
+                <h2 style="display : none;">QUALITÉS PERSONNELLES</h2>
+                <hr class="title-deco" />
+                <h3 style="display : none;">Voici quelques traits de personnalités qui me caractérisent</h3>
+            </div>
+            <div class="container-content" id="container-quality">
+                <div id="quality-persistence" class="children-content">
+                    <i class="material-icons">done</i>
+                    <h4 class="link">PERSÉVÉRANCE</h4>
+                    <p>Sans ce trait de caractère, je n’aurais peut-être pas eu la vie professionnelle que j’ai aujourd’hui. 
+                       Je sais toujours, au fond de moi, que lorsque je commence un projet, qu’il soit professionnel ou personnel, 
+                       qu’il est atteignable par la volonté et la persévérence. 
+                    </p>
+                </div>
+                <div class="children-content">
+                    <i class="material-icons">hourglass_full</i>
+                    <h4>PATIENCE</h4>
+                    <p>Je sais que rien ne se fait sans une bonne dose de patience.
+                       À force de patience et de calme, on parvient toujours à un meilleur résultat que si on se
+                       précipite et on s'impatiente quand à la concrétisation d'un projet, qu'il soit professionnel comme
+                       personnel.
+                    </p>
+                </div>
+                <div class="children-content">
+                    <i class="material-icons">assignment</i>
+                    <h4>ORGANISATION</h4>
+                    <p>Mon organisation et ma rigueur sont souvent mis en avant par mon entourage.
+                       Avant même de commencer à travailler sur un projet, il est nécessaire pour 
+                       moi d'organiser et de structurer les différentes étapes du processus de réalisation.
+                       Pour moi, un projet qui commence avec une mauvaise organisation est un projet compromis.
+                    </p>
+                </div>
+            </div>
+            <div id="quality-perseverance-description" class="description" style="display :none;">
+                <div id="quality-detailled-description-close">
+                    <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
+                </div>
+                <h3>La générosité dans l'envie</h3>
+                <img class="picture-quality" src="img/persistence.jpg" alt="Charte_Confidential">
+                <p>
+                    Ma propre définition de la persévérance c'est faire preuve de générosité 
+                    dans l'envie et la volonté d'entreprendre dans ses projets professionnels 
+                    comme personnels.
+                </p>
+                <p>
+                    Sans ce trait de caractère, j'aurais eu beaucoup plus de difficultés quand 
+                    à la réalisation de mon projet de reconversion professionnels.
+                </p>
+                <p>
+                    Je peux très simplement faire un parallèle concret sur mes débuts dans ma carrière de développeur Web au sein du Secours Populaire. 
+                    N’ayant aucune connaissance et aucune expérience dans le domaine de l’informatique, très peu de personne auraient misé sur 
+                    la réussite de ce projet de reconversion.
+                </p>
+                <p> 
+                    Plus précisément, on m’a fixé, dés le début, des objectifs très précis et très ambitieux 
+                    pour moi à l’époque. Il s’agissait de se connecter et de réussir une requête qui me paraît simple aujourd’hui, 
+                    l’affichage d’une information sur une page venant d’une base de donnée en utilisant ADO pour réaliser un simple formulaire en ASP.Net. 
+                    Je suis resté bloqué pendant un long moment sur un problème sans jamais me dire que c’était trop compliqué et que je n’y parviendrait pas. 
+                    J’ai fini par résoudre mon problème grâce à la persévérance, sans cela on aurait fini peut-être par me montrer, 
+                    mais cela n’aurait pas été ma réussite, le fruit de mon propre travail.
+                </p>
+            </div>
+        </section>
         <section id="skills">
             <div id="skills-title" style="display : none;">
-                <h2 style="display : none;">COMPÉTENCES</h2>
+                <h2 style="display : none;">COMPÉTENCES TECHNIQUES</h2>
                 <hr class="title-deco" style="display : none;" />
                 <h3 style="display : none;">Ce que je sais faire</h3>
             </div>
             
             <div class="container-content" id="container-skills">
-                <div class="children-content" style="display : none;">
+                <div class="children-content" >
                     <i class="material-icons">create</i>
                     <h4>WEB DESIGN</h4>
                     <p>Réalisation de site web responsive, animation avec la gestion du DOM, utilisation d'AJAX, refonte de la partie graphique de site web</p>
                 </div>
-                <div class="children-content" style="display : none;">
+                <div class="children-content">
                         <i class="material-icons">code</i>
                         <h4>DÉVELOPPEMENT</h4>
                         <p>Utilisation de la technologie ASP.Net (WebForms et MVC) et C#, 
@@ -118,7 +183,7 @@
                            Utilisation de Reporting Services pour la création de rapports téléchargeable.
                         </p>
                 </div>
-                <div class="children-content" style="display : none;">
+                <div class="children-content">
                         <i class="material-icons">storage</i>
                         <h4>BASE DE DONNÉES</h4>
                         <p>Utilisation de la technologie MicroSoft SQL Server pour la gestion des bases de données.
@@ -127,7 +192,7 @@
                            pour la recherche par mot-clé.
                         </p>
                 </div>
-                <div class="children-content" style="display : none;">
+                <div class="children-content">
                         <i class="material-icons">school</i>
                         <h4>FORMATION</h4>
                         <p>Mise en place d'atelier formation et formation dans différents cadres et contextes. 
@@ -135,7 +200,7 @@
                            Présentation et organisation de débat lors de ces formations.
                         </p>
                 </div>
-                <div class="children-content" style="display : none;">
+                <div class="children-content">
                         <i class="material-icons">info</i>
                         <h4>COMPÉTENCES ANNEXES WEB</h4>
                         <p>
@@ -145,7 +210,7 @@
                            Babylon Js (Conception d'un mini-jeu en 3D en JavaScript).
                         </p>
                 </div>
-                <div class="children-content" style="display : none;">
+                <div class="children-content">
                         <i class="material-icons">event_note</i>
                         <h4>GESTION DES PROJETS</h4>
                         <p>
@@ -169,7 +234,7 @@
             <div class="project-container-content">
                 <div id="1" class="project-children-content" style="display : none;" >
                     <div id="picture-title-1" class="picture-project-title" style="display: none;"><p>Atrium : la charte de confidentialité</p></div>
-                    <img class="picture-project" src="img/Charte_Confidential.jpg" alt="Charte_Confidential">
+                    <img class="picture-project" src="img/Charte_Confidential.JPG" alt="Charte_Confidential">
                 </div>
                 <div id="2" class="project-children-content" style="display : none;" >
                     <div id="picture-title-2" class="picture-project-title" style="display: none;"><p>Atrium : le mini-FrameWork pour PopFormulaire</p></div>
