@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $( "#quality-persistence").click(function(e) {
+        $("#quality-perseverance-description").fadeIn(500);
+    });
+
+    $( "#quality-detailled-description-close").click(function(e) {
+        $("#quality-perseverance-description").fadeOut(500);
+    });
+
     $( "#2").click(function(e) {
         $("#projects-detailled-description").fadeIn(500);
     });
