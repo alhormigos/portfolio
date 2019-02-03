@@ -26,8 +26,4 @@ $(document).ready(function(){
       $(this).next('.nav').fadeIn(500, afficheSuivante);
   });
     
-  $('.project-children-content').first().fadeIn(1000, function afficheSuivante(){
-    $(this).next('.project-children-content').fadeIn(1000, afficheSuivante);
-  });
-
 });
