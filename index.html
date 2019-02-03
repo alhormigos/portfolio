@@ -15,14 +15,14 @@
     <!-- Owl Carousel -->
     <script src="owl.carousel.min.js"></script>
     <!-- Scripts Js -->
+    <script src="animatedMenu.js"></script>
     <script src="keyBoardEffect.js"></script>
-    <script src="scrollingAnimation.js"></script>
     <script src="tilesAnimation.js"></script>
     <script src="projectDescriptionAnimation.js"></script>
 </head>
 <body>
-    <nav>
-        <ul >
+    <nav class="navigation">
+        <ul>
             <li class="nav" style="display : none;"><a href="#home">Accueil</a></li>
             <li class="nav" style="display : none;"><a href="#quality">Qualités personnelles</a></li>
             <li class="nav" style="display : none;"><a href="#skills">Compétences techniques</a></li>
@@ -32,7 +32,7 @@
         </ul>
     </nav>
     <section id="main">
-        <section id="home">
+        <section class="page-section" id="home">
             <div id="container-logo" class="float-left">
                 <div id="logo" style="display: none;">
                     <div id="big-title" style="display: none;">
@@ -97,34 +97,40 @@
                 </div>
             </div>
         </section>
-        <section id="quality">
-            <div id="quality-title">
-                <h2 style="display : none;">QUALITÉS PERSONNELLES</h2>
+        <section class="page-section" id="quality">
+            <div class="title" id="quality-title">
+                <h2>QUALITÉS PERSONNELLES</h2>
                 <hr class="title-deco" />
-                <h3 style="display : none;">Voici quelques traits de personnalités qui me caractérisent</h3>
+                <h3>Voici quelques traits de personnalités qui me caractérisent</h3>
             </div>
             <div class="container-content" id="container-quality">
                 <div id="quality-persistence" class="children-content">
                     <i class="material-icons">done</i>
-                    <h4 class="link">PERSÉVÉRANCE</h4>
-                    <p>Sans ce trait de caractère, je n’aurais peut-être pas eu la vie professionnelle que j’ai aujourd’hui. 
+                    <h4 class="link tooltip" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
+                    <i class="material-icons material-icons-info" style="display: none;">info</i>
+                    <p>
+                        Sans ce trait de caractère, je n’aurais peut-être pas eu la vie professionnelle que j’ai aujourd’hui. 
                        Je sais toujours, au fond de moi, que lorsque je commence un projet, qu’il soit professionnel ou personnel, 
                        qu’il est atteignable par la volonté et la persévérence. 
                     </p>
                 </div>
-                <div class="children-content">
+                <div id="quality-patience" class="children-content">
                     <i class="material-icons">hourglass_full</i>
-                    <h4>PATIENCE</h4>
-                    <p>Je sais que rien ne se fait sans une bonne dose de patience.
+                    <h4 class="link" title="cliquer pour plus de détail">PATIENCE</h4>
+                    <i class="material-icons material-icons-info" style="display: none;">info</i>
+                    <p>
+                       Je sais que rien ne se fait sans une bonne dose de patience.
                        À force de patience et de calme, on parvient toujours à un meilleur résultat que si on se
                        précipite et on s'impatiente quand à la concrétisation d'un projet, qu'il soit professionnel comme
                        personnel.
                     </p>
                 </div>
-                <div class="children-content">
+                <div id="quality-organisation" class="children-content">
                     <i class="material-icons">assignment</i>
-                    <h4>ORGANISATION</h4>
-                    <p>Mon organisation et ma rigueur sont souvent mis en avant par mon entourage.
+                    <h4 class="link" title="cliquer pour plus de détail">ORGANISATION</h4>
+                    <i class="material-icons material-icons-info" style="display: none;">info</i>
+                    <p>
+                       Mon organisation et ma rigueur sont souvent mis en avant par mon entourage.
                        Avant même de commencer à travailler sur un projet, il est nécessaire pour 
                        moi d'organiser et de structurer les différentes étapes du processus de réalisation.
                        Pour moi, un projet qui commence avec une mauvaise organisation est un projet compromis.
@@ -136,7 +142,7 @@
                     <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
                 </div>
                 <h3>La générosité dans l'envie</h3>
-                <img class="picture-quality" src="img/persistence.jpg" alt="Charte_Confidential">
+                <img class="picture-quality" src="img/persistence.jpg" alt="persistence">
                 <p>
                     Ma propre définition de la persévérance c'est faire preuve de générosité 
                     dans l'envie et la volonté d'entreprendre dans ses projets professionnels 
@@ -160,14 +166,84 @@
                     mais cela n’aurait pas été ma réussite, le fruit de mon propre travail.
                 </p>
             </div>
-        </section>
-        <section id="skills">
-            <div id="skills-title" style="display : none;">
-                <h2 style="display : none;">COMPÉTENCES TECHNIQUES</h2>
-                <hr class="title-deco" style="display : none;" />
-                <h3 style="display : none;">Ce que je sais faire</h3>
+            <div id="quality-patience-description" class="description" style="display :none;">
+                <div id="quality-detailled-description-close">
+                    <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
+                </div>
+                <h3>Patience est mère de sûreté</h3>
+                <img class="picture-quality" src="img/patience.jpg" alt="patience">
+                <p>
+                    Être patient, ce n'est pas, selon moi, être passif et subir les évènement.
+                    Bien au contraire, la patience consiste à attendre le bon moment pour agir mais 
+                    cela veut surtout dire agir à bon escient et sans excès. Ainsi je pense qu'une personne
+                    impatiente agira toujours avec excès et précipitation lorsqu'elle 
+                    commencera à travailler sur un projet car elle recherchera toujours un 
+                    résultat immédiat qui ne sera pas forcément à la hauteur de ses espérances.
+                </p>
+                <p>
+                    Cette patience, j'ai du en faire preuve lorsque j'étais à la recherche de mon 
+                    poste de Développeur Web que j'occupe actuellement au sein du Secours Populaire Français.
+                    J'ai du apprendre à attendre des réponses à des demandes d'emplois que je faisais mais surtout
+                    à ne pas forcément avoir de réponses après de longues heures de recherches et de rédactions de 
+                    lettres de motivations. 
+                </p>
+                <p>
+                    Si j'avais été impatient, jamais je ne serais parvenu à obtenir le résultat 
+                    que j'ai aujourd'hui. Cette patience m'a permis de me remettre en question, de faire évoluer ma démarche
+                    de recherche d'emploi mais surtout à ne pas me précipiter lorsqu'il a fallu faire un choix.
+                </p>
+                <p> 
+                    Cette philosophie, je l'applique aujourd'hui dans la plupart des projets professionnels que j'aborde.
+                    Quand je suis confronté à une difficulté, je prends le temps de rechercher et de trouver une solution 
+                    qui me paraît être la meilleure possible. Pour beaucoup, cela semble contre-productif mais je pense
+                    que la patience permet de gagner du temps face à la précipitation et l'éparpillement.
+                </p>
             </div>
-            
+            <div id="quality-organisation-description" class="description" style="display :none;">
+                <div id="quality-detailled-description-close">
+                    <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
+                </div>
+                <h3>S'organiser pour mieux avancer</h3>
+                <img class="picture-quality" src="img/checklist.png" alt="checklist">
+                <p>
+                    L'organisation, ce n'est pas forcément être rigide dans ses idées et son mode de fonctionnement.
+                    Beaucoup confonde organisation et esprit obtus, non ouvert à l'évolution et l'évolutivité.
+                    L'organisation permet, selon moi d'anticiper l'évolution d'une demande qui va forcément arriver 
+                    à un moment ou un autre.
+                </p>
+                <p>
+                    Cette organisation, j'ai su l'utiliser à bon escient dans le cadre de mon activité professionnelle.
+                    Elle est rassurante pour moi mais aussi et surtout pour celles et ceux qui travaillent avec moi car 
+                    on sait précisément ce que je veux faire et comment.
+                </p>
+                <p>
+                    De plus, elle permet de se prémunir de situations délicates qui peuvent arriver au cours de la vie 
+                    d'un projet. Ainsi, au cours d'un projet sur lequel je travallais, une personne est arrivée précipitamment
+                    à mon bureau. Elle se plaignait du fait qu'une fonctionnalité n'étais pas implémentée dans le projet en question.
+                </p>
+                <p> 
+                    Pour lui répondre, je me suis appuyé sur le rapport préliminaire sur lequel on avait travaillé ensemble.
+                    Ceci a permis de recentrer la conversation, de calmer les inquiétudes de cette personne mais surtout de 
+                    montrer qu'une organisation claire et nette était nécessaire à la concrétisation de ce projet.
+                </p>
+                <p>
+                    L'évolutivité d'un projet est une composante nécessaire à prendre en compte et je l'ai prise en compte, 
+                    après discussion avec l'ensemble des personnes concernées. J'ai tout simplement revu mon organisation en 
+                    considérant la demande comme une mise à jour d'une étape déjà effectuée dans le projet.
+                </p>
+                <p>
+                    Sans cette organisation, jamais je ne pourrais avancer sereinement dans les projets que j'entreprends car 
+                    elle me permet de les aborder plus sereinement. Cette vision est aussi utile lors de la phase de finalisation d'un projet,
+                    car il s'agit du moment où la demande est souvent la plus forte en terme d'évolutions.
+                </p>
+            </div>
+        </section>
+        <section class="page-section" id="skills">
+            <div class="title" id="skills-title">
+                <h2>COMPÉTENCES TECHNIQUES</h2>
+                <hr class="title-deco" />
+                <h3>Ce que je sais faire</h3>
+            </div>
             <div class="container-content" id="container-skills">
                 <div class="children-content" >
                     <i class="material-icons">create</i>
@@ -225,30 +301,30 @@
                 </div> -->
             </div>
         </section>
-        <section id="project">
-            <div id="project-title" style="display : none;">
-                <h2 style="display : none;">PROJETS</h2>
-                <hr class="title-deco" style="display : none;" />
-                <h3 style="display : none;">Voici quelques projets sur lesquels j'ai travaillé, professionnels comme personnels</h3>
+        <section class="page-section" id="project">
+            <div class="title" id="project-title">
+                <h2>PROJETS</h2>
+                <hr class="title-deco" />
+                <h3>Voici quelques projets sur lesquels j'ai travaillé, professionnels comme personnels</h3>
             </div>
             <div class="project-container-content">
-                <div id="1" class="project-children-content" style="display : none;" >
+                <div id="1" class="project-children-content" >
                     <div id="picture-title-1" class="picture-project-title" style="display: none;"><p>Atrium : la charte de confidentialité</p></div>
-                    <img class="picture-project" src="img/Charte_Confidential.jpg" alt="Charte_Confidential">
+                    <img class="picture-project" src="img/Charte_Confidential.JPG" alt="Charte_Confidential">
                 </div>
-                <div id="2" class="project-children-content" style="display : none;" >
+                <div id="2" class="project-children-content" >
                     <div id="picture-title-2" class="picture-project-title" style="display: none;"><p>Atrium : le mini-FrameWork pour PopFormulaire</p></div>
                     <img class="picture-project" src="img/PopFormulaire.JPG" alt="PopFormulaire">
                 </div>
-                <div id="3" class="project-children-content" style="display : none;" >
+                <div id="3" class="project-children-content" >
                     <div id="picture-title-3" class="picture-project-title" style="display: none;" ><p>Atrium : la barre de recherche dynamique</p></div>
                     <img class="picture-project" src="img/Dynamic_Search_Bar.jpg" alt="Dynamic_Search_Bar">
                 </div>
-                <div id="4" class="project-children-content" style="display : none;" >
+                <div id="4" class="project-children-content" >
                     <div id="picture-title-4" class="picture-project-title" style="display: none;"><p>Babylon Js : le lapin Demoniak</p></div>
                     <img class="picture-project" src="img/lapin_demoniak.jpg" alt="lapins_demoniak">
                 </div>
-                <div id="5" class="project-children-content" style="display : none;" >
+                <div id="5" class="project-children-content" >
                     <div id="picture-title-5" class="picture-project-title" style="display: none;"><p>Visual Basic : le fructos Game</p></div>
                     <img class="picture-project" src="img/fruits.jpg" alt="fruits">
                 </div>
@@ -468,5 +544,7 @@
             </div>
         </div>
     </section>
+    <script src="intersectionObserver.js"></script>
+    <script src="scrollingAnimation.js"></script>
 </body>
 </html>
