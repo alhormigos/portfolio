@@ -1,11 +1,63 @@
 $(document).ready(function(){
-
-    $( "#quality-persistence").click(function(e) {
-        $("#quality-perseverance-description").fadeIn(500);
+    
+    $( "#quality-organisation > h4" ).mouseenter(function() {
+        $( "#quality-organisation > .material-icons-info" ).css("display", "inline-block");;
     });
 
-    $( "#quality-detailled-description-close").click(function(e) {
+    $( "#quality-organisation > h4" ).mouseleave(function() {
+        $( "#quality-organisation > .material-icons-info" ).css("display", "none");;
+    });
+
+    $( "#quality-organisation > h4").click(function(e) {
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-patience-description").fadeOut(1);
+        $("#quality-organisation-description").fadeIn(500);
+        $("#quality-organisation > h4").addClass("link-clicked");
+        $("#quality-patience > h4").removeClass("link-clicked");
+        $("#quality-perseverance > h4").removeClass("link-clicked");
+    });
+
+    $( "#quality-persistence > h4" ).mouseenter(function() {
+        $( "#quality-persistence > .material-icons-info" ).css("display", "inline-block");;
+    });
+
+    $( "#quality-persistence > h4" ).mouseleave(function() {
+        $( "#quality-persistence > .material-icons-info" ).css("display", "none");;
+    });
+
+    $( "#quality-persistence > h4").click(function(e) {
+        $("#quality-organisation-description").fadeOut(1);
+        $("#quality-patience-description").fadeOut(1);
+        $("#quality-perseverance-description").fadeIn(500);
+        $("#quality-persistence > h4").addClass("link-clicked");
+        $("#quality-patience > h4").removeClass("link-clicked");
+        $("#quality-organisation > h4").removeClass("link-clicked");
+    });
+
+    $( "#quality-patience > h4" ).mouseenter(function() {
+        $( "#quality-patience > .material-icons-info" ).css("display", "inline-block");;
+    });
+
+    $( "#quality-patience > h4" ).mouseleave(function() {
+        $( "#quality-patience > .material-icons-info" ).css("display", "none");;
+    });
+
+    $( "#quality-patience > h4").click(function(e) {
+        $("#quality-organisation-description").fadeOut(1);
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-patience-description").fadeIn(500);
+        $("#quality-patience > h4").addClass("link-clicked");
+        $("#quality-organisation > h4").removeClass("link-clicked");
+        $("#quality-persistence > h4").removeClass("link-clicked");
+    });
+
+    $( ".picture-detailled-description-close").click(function(e) {
+        $("#quality-organisation-description").fadeOut(500);
+        $("#quality-organisation > h4").removeClass("link-clicked");
         $("#quality-perseverance-description").fadeOut(500);
+        $("#quality-persistence > h4").removeClass("link-clicked");
+        $("#quality-patience-description").fadeOut(500);
+        $("#quality-patience > h4").removeClass("link-clicked");
     });
 
     $( "#2").click(function(e) {
