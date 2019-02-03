@@ -3,6 +3,12 @@ a{
     text-decoration: none;
 }
 
+.actif {
+    color: rgb(2, 173, 208);
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
 body {
     height: 100%;
     color: white;
@@ -33,6 +39,16 @@ body {
 .container-content{
     display: flex;
     flex-wrap: wrap;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.container-content.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
 }
 
 .container-content>div {
@@ -179,6 +195,22 @@ i{
     background: rgb(2, 173, 208);
 }
 
+.link-clicked{
+    color: rgb(2, 173, 208);
+}
+
+.link-clicked:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: rgb(2, 173, 208);
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+}
+
 .long-title{
     font-size: 14px;
     vertical-align: 40%;
@@ -258,11 +290,21 @@ nav ul > li.show {
 
 #project{
     background-color: rgb(0, 23, 54);
+    height: 500px;
 }
 
 .project-container-content{
     display: flex;
     flex-wrap: wrap;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+.project-container-content.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
 }
 
 .project-container-content>div {
@@ -429,6 +471,22 @@ nav ul > li.show {
 
 #sync1.owl-theme .owl-next {
     right: 10px;
+}
+
+.title{
+    display: inline-block;
+	width: 100%;
+	text-align: center;
+	/* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.title.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1350px) {
