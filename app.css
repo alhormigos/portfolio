@@ -74,11 +74,41 @@ body {
     font-size:30px;
 }
 
+#big-title-info{
+    margin-top: 1%;
+    text-align: center;
+    font-size:24px;
+}
 .children-content > img {
     margin-top: 13%;
     padding: 2px;
     width: 200px;
     height: 200px;
+}
+
+#contact{
+    background: url(./img/0_And_1_footer_border.jpg) repeat-x top center/1.1%;
+    background-color: rgb(86, 115, 154);
+    height: 100%;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.contact{
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+    transform: translateX(0);
+    opacity:1;
+    transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.contact.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.contact-info{
+    text-align: center;
 }
 
 .container-content{
@@ -259,12 +289,45 @@ i{
     color: rgb(2, 173, 208);
 }
 
+.infos-icons {
+    display: block;
+    width: 50px;
+    margin-left: 35.5%;
+    text-align: center;
+    line-height: 2.2em;
+}
+
+.infos-values > i {
+    display: inline-block;
+    color: rgb(0, 37, 44);
+}
+
+.infos-values > a {
+    color: lightgrey;
+    font-family: 'Open Sans', 'Trebuchet MS', Sans-Serif;
+    vertical-align: 20%;
+}
+
+.infos-values {
+    text-align: center;
+    padding-top: 12px;
+    padding-right: 20px;
+    line-height: 2.2em;
+    font-size: 14px;
+}
+
 .light-green{
     color : #00bb7d;
 }
 
 #little-title{
     font-size: 20px;
+    color: lightgrey;
+    text-align: center;
+}
+
+#little-title-info{
+    font-size: 13px;
     color: lightgrey;
     text-align: center;
 }

@@ -64,6 +64,12 @@ itemTimelineContainer.classList.add('not-visible')
 
 observer.observe(document.querySelector('.timeline-container'))
 
+// On le fait pour l'ensemble des items qui ont la classe contact
+let itemcontact = document.querySelector('.contact')
+itemcontact.classList.add('not-visible')
+
+observer.observe(document.querySelector('.contact'))
+
 
 // On le fait pour l'ensemble des items qui ont la classe project-container-content
 // let itemProjectContainer = document.querySelector('.project-container-content')
