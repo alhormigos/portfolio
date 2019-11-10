@@ -720,6 +720,59 @@ nav ul > li.show {
     background-color: rgb(0, 13, 30);
 }
 
+#skills-detailled-description{
+    background-color: rgba(0, 0, 0, 0.8);
+    position : fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    overflow:scroll;
+    z-index: 600;
+}
+
+#skills-detailled-description-close{
+    text-align: right;
+    padding: 10px;
+}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#skills-detailled-description-design-web-container-description{
+    margin: 30px;
+    vertical-align: top;
+    text-align: left;
+}
+
+#skills-detailled-description-design-web-container-picture{
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+}
+
+#skills-detailled-description-design-web-picture{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+
+#skills-detailled-description-design-web-container-description > h5 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#skills-detailled-description-design-web-container-description > p{
+    font-size : 14px;
+    margin-bottom: 15px;
+}
+
+#skills-detailled-description-design-web-container-description > ul{
+    font-size: 14px;
+}
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
 #skills-logo{
     border-radius:50%;
     display: inline-block;

@@ -191,7 +191,20 @@ $(document).ready(function(){
         $("body").css("overflow", "auto");
     });
 
+    // To navigate in skills description
 
+    $( "#skills-detailled-description-close").click(function(e) {
+        $("#skills-detailled-description").fadeOut(500);
+        //To restore scroll bar
+        $("body").css("overflow", "auto");
+    });
+
+    $( "#skill_1").click(function(e) {
+        $("#skills-detailled-description").fadeIn(500);
+        $("#skills-detailled-description-design-web").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
     // To Navigate with carrousel
 
     var sync1 = $("#sync1");
