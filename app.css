@@ -9,6 +9,50 @@ a{
     transition-duration: 0.5s;
 }
 
+#a-propos-de-moi{
+    background-color: rgb(0, 23, 54);
+    height: 100%;
+}
+
+.a-propos-de-moi-container{
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.a-propos-de-moi-container.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.a-propos-de-moi-container-description {
+    text-align: left;
+    width: 90%;
+    line-height: 1.35em;
+}
+
+.a-propos-de-moi-container-description > p {
+    color: #dadada;
+    text-align: left;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.a-propos-de-moi-container-picture > img{
+    border-radius : 100px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.arrow-info-dowm{
+    text-align: center;
+}
+
 body {
     height: 100%;
     color: white;
@@ -17,6 +61,7 @@ body {
     margin: 0;
     padding: 0;
     outline: 0;
+    overflow-x: hidden;
 }
 
 .blue{
@@ -59,7 +104,16 @@ body {
 
 .children-content{
     width:100%;
+    height: 270px;
     text-align: left;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+}
+
+.children-content:hover{
+    box-shadow: 6px 6px 7px 0px rgba(0,38,150,1);
+    cursor: pointer;
 }
 
 .children-content > p {
@@ -68,6 +122,24 @@ body {
     margin-left: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+
+.children-content-clicked{
+    cursor: pointer;
+}
+
+.children-content-summary{
+    display: block;
+    height: 120px;
+}
+
+.children-content-summary > ul > li {
+    color: #dadada;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 1.4em;
 }
 
 #children-content-picture{
@@ -91,6 +163,34 @@ body {
     max-height: 80%;
     padding-top: 10%;
     padding-bottom: 5%;
+}
+
+.chantier{
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+.chantier.not-visible{
+    transform: translateX(500px);
+    opacity: 0;
+}
+
+.description{
+    overflow : auto;
+    padding: 0 15px 50px 15px;
+    border-radius: 10px;
+}
+
+.description > ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.description > ul > li {
+    display: inline;
+    margin-right: 30px;
 }
 
 .description > h3 {
@@ -225,6 +325,21 @@ i{
     overflow: hidden;
 }
 
+.menu-description-link{
+    font-size: 21px;
+}
+
+.menu-quality-description{
+    display: inline-block;
+    text-align: left; 
+    width:20%;
+    vertical-align: top;
+}
+
+.menu-quality-description > ul {
+    list-style-type: none;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -250,6 +365,10 @@ nav ul > li {
 nav ul > li.show {
     opacity: 1;
     transition: opacity 500ms;
+}
+
+.picture-detailled-description-close{
+    cursor: pointer;
 }
 
 .picture-project{
@@ -279,45 +398,19 @@ nav ul > li.show {
 }
 
 .picture-quality{
-    height:230px;
-    width:270px;
+    height:115px;
+    width:135px;;
     float: left;
     margin-top: 10px;
     margin-left: 40px;
     margin-right: 15px;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 #project{
     background-color: rgb(0, 23, 54);
-    height: 500px;
-}
-
-.project-container-content{
-    display: flex;
-    flex-wrap: wrap;
-    /* Ajouté pour la demo avec l'IntersectionObserver */
-	transform: translateX(0);
-	opacity:1;
-	transition: transform 0.9s, opacity 0.9s;
-}
-
-.project-container-content.not-visible{
-	transform: translateX(500px);
-	opacity: 0;
-}
-
-.project-container-content>div {
-    flex: 0 200px;
-    border: 3px white solid;
-    box-sizing:border-box;
-    margin:0 15px 30px 15px;
-}
-
-.project-children-content{
-    width:200px;
-    height: 200px;
-    text-align: left;
+    height: 100%;
 }
 
 #projects-detailled-description{
@@ -335,6 +428,48 @@ nav ul > li.show {
     text-align: right;
     padding: 10px;
 }
+
+/*************** To Confidentiality Agreement Install CSS **************/
+
+#projects-detailled-description-confidentiality-container-description{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+    vertical-align: top;
+}
+
+#projects-detailled-description-confidentiality-container-picture{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+}
+
+#projects-detailled-description-confidentiality-picture{
+    width: 100%;
+    height: 100%;
+}
+
+#projects-detailled-description-confidentiality-container-description > h5 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#projects-detailled-description-confidentiality-container-description > p{
+    font-size : 14px;
+    margin-bottom: 15px;
+}
+
+#projects-detailled-description-confidentiality-container-description > ul{
+    font-size: 14px;
+}
+
+/*************** End Confidentiality Agreement Install CSS ******************/
+
+
+
+/*************** To Mini FrameWork Pop Formulaire CSS ******************/
 
 #projects-detailled-description-mini-framework-container-description{
     display: inline-block;
@@ -355,6 +490,154 @@ nav ul > li.show {
     width: 100%;
     height: 100%;
 }
+
+#projects-detailled-description-mini-framework-container-description > h5 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#projects-detailled-description-mini-framework-container-description > p{
+    font-size : 14px;
+    margin-bottom: 15px;
+}
+
+#projects-detailled-description-mini-framework-container-description > ul{
+    font-size: 14px;
+}
+
+/*************** End Mini FrameWork Pop Formulaire CSS ******************/
+
+
+/*************** To Dynamic SearchBar CSS ******************/
+
+#projects-detailled-description-searchBar-container-description{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+    vertical-align: top;
+}
+
+#projects-detailled-description-dynamic-searchBar-container-picture{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+}
+
+#projects-detailled-description-dynamic-searchBar-picture{
+    width: 100%;
+    height: 100%;
+}
+
+#projects-detailled-description-searchBar-container-description > h5 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#projects-detailled-description-searchBar-container-description > p{
+    font-size : 14px;
+    margin-bottom: 15px;
+}
+
+#projects-detailled-description-searchBar-container-description > p > a {
+    color: rgb(2, 173, 208);
+    font-weight: bold;
+}
+
+#projects-detailled-description-searchBar-container-description > ul{
+    font-size: 14px;
+}
+
+/*************** End Dynamic SearchBar CSS ******************/
+
+/************* To Dynamic graphical Update Atrium CSS **************/
+
+#projects-detailled-description-graphic-maj-container-description{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+    vertical-align: top;
+}
+
+#projects-detailled-description-graphic-maj-container-picture{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+}
+
+#projects-detailled-description-graphic-maj-picture{
+    width: 85%;
+    height: 85%;
+}
+
+#projects-detailled-description-graphic-maj-container-description > h5 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#projects-detailled-description-graphic-maj-container-description > p{
+    font-size : 14px;
+    margin-bottom: 15px;
+}
+
+#projects-detailled-description-graphic-maj-container-description > p > a {
+    color: rgb(2, 173, 208);
+    font-weight: bold;
+}
+
+#projects-detailled-description-graphic-maj-container-description > ul{
+    font-size: 14px;
+}
+
+/************* End Create Fructos Project CSS *************/
+
+#projects-detailled-description-fructos-game-container-description{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+    vertical-align: top;
+}
+
+#projects-detailled-description-fructos-game-container-picture{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin: 30px;
+}
+
+#projects-detailled-description-fructos-game-picture{
+    width: 100%;
+    height: 100%;
+}
+
+#projects-detailled-description-fructos-game-container-description > h5 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+#projects-detailled-description-fructos-game-container-description > p{
+    font-size : 14px;
+    margin-bottom: 15px;
+}
+
+#projects-detailled-description-fructos-game-container-description > p > a {
+    color: rgb(2, 173, 208);
+    font-weight: bold;
+}
+
+#projects-detailled-description-fructos-game-container-description > ul{
+    font-size: 14px;
+}
+
+/************* To Create Fructos Project CSS **************/
+
+
+
+/************* End Dynamic graphical Update Atrium CSS *************/
 
 #quality{
     background-color: rgb(0, 23, 54);
@@ -396,7 +679,7 @@ nav ul > li.show {
 
 /* CSS to owl carousel */
 
-#sync1 h5{
+/* #sync1 h5{
     font-size: 16px;
     text-decoration: underline;
 }
@@ -471,7 +754,191 @@ nav ul > li.show {
 
 #sync1.owl-theme .owl-next {
     right: 10px;
+} */
+
+/********************** Timeline ******************************/
+
+.timeline-container {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+ }
+ 
+.timeline-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
 }
+ 
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.timeline-container.not-visible{
+    transform: translateX(500px);
+    opacity: 0;
+}
+
+ .timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+ 
+ .timeline-block-right {
+    float: right;
+ }
+ 
+ .timeline-block-left {
+    float: left;
+    direction: rtl
+ }
+ 
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: rgb(2, 173, 208);
+    margin-top: 10px;
+    z-index: 9999
+ }
+ 
+ .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+ }
+ 
+ .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+ }
+ 
+ .timeline-content span {
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #a4a4a4; */
+    color: rgb(2, 173, 208);
+    direction:ltr;
+    text-align: left;
+ }
+ 
+ .timeline-content p {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    /* color: #888; */
+    color: lightgrey;
+    direction: ltr;
+    text-align: left;
+ }
+ 
+ .timeline-content-ajust{
+     margin-left: 27%;
+ }
+
+ @media screen and (max-width: 768px) {
+    .timeline-container:before {
+       left: 8px;
+       width: 2px;
+    }
+    .timeline-block {
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    .timeline-block-right {
+       float: none;
+    }
+ 
+    .timeline-block-left {
+       float: none;
+       direction: ltr;
+    }
+}
+
+/********************** End Tiles ******************************/
+
+
+
+
+/********************** Tiles ******************************/
+
+.description-tile{ text-align: left; }
+
+.description-tile > h4,p { margin: 0;}
+
+.description-tile > h4 { margin-bottom: 10px; font-size: 15px;}
+
+.tiles {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+    transform: translateX(0);
+    opacity:1;
+    transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.tiles.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.tile {
+    flex: 1 15%;
+    text-decoration: none;
+    height: 200px;
+    background: red;
+    background-size: cover;
+    color: #FFF;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+
+
+.description-tile {
+    box-sizing: border-box;
+    background: rgba(0,0,0,.6);
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    transform: translateY(165px);
+    transition: all 300ms ease-in-out;
+}
+
+.tile:hover > .description-tile {
+    transform: translateY(0);
+    background: rgba(0,0,0,.6);
+    padding-top: 30px;
+}
+
+/********************** End Tiles ******************************/
 
 .title{
     display: inline-block;
@@ -487,6 +954,35 @@ nav ul > li.show {
 .title.not-visible{
 	transform: translateX(500px);
 	opacity: 0;
+}
+
+.translate{
+    transform: translateX(900px);
+    transition-duration: 0.5s;
+}
+
+/********************** Tiles ******************************/
+
+/* 
+@media screen and (max-width:700px) {
+    .tile {
+        flex: 1 1 100%;
+    }
+} */
+  
+/********************** End Tiles ******************************/
+
+@media screen and (max-width: 1500px){
+    .menu-description-link{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    .menu-description-link{
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1350px) {
@@ -518,5 +1014,15 @@ nav ul > li.show {
 
     .children-content{
         width:100%;
+    }
+
+    .tile {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .description > ul > li{
+        display: block;
     }
 }

@@ -21,10 +21,9 @@ $(window).scroll(function() {
 
     // Assign active class to nav links while scolling
     $('.page-section').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
+            if ($(this).position().top <= scrollDistance + 100) {
                     $('.navigation li a.actif').removeClass('actif');
                     $('.navigation li a').eq(i).addClass('actif');
-
             }
     });
 }).scroll();

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="magic.css">
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
     <!-- jQuery -->
@@ -27,8 +28,8 @@
             <li class="nav" style="display : none;"><a href="#quality">Qualités personnelles</a></li>
             <li class="nav" style="display : none;"><a href="#skills">Compétences techniques</a></li>
             <li class="nav" style="display : none;"><a href="#project">Projets</a></li>
-            <li class="nav" style="display : none;">Mon parcours</li>
-            <li class="nav" style="display : none;">À propos</li>
+            <li class="nav" style="display : none;"><a href="#timeline">Mon parcours</a></li>
+            <li class="nav" style="display : none;"><a href="#a-propos-de-moi">À propos de moi</a></li>
         </ul>
     </nav>
     <section id="main">
@@ -86,7 +87,7 @@
                             }<br/>
                             <span class="blue">else</span> {<br/>
                                 <div class="indentation">
-                                        <span class="blue">throw new</span> <span class="light-green">Exception</span>( <span class="red">"Vous êtes la bienvenue quans même !!!"</span>);<br/>
+                                    <span class="blue">throw new</span> <span class="light-green">Exception</span>( <span class="red">"Vous êtes la bienvenue quans même !!!"</span>);<br/>
                                 </div>
                             }
                         </div>
@@ -106,70 +107,113 @@
             <div class="container-content" id="container-quality">
                 <div id="quality-persistence" class="children-content">
                     <i class="material-icons">done</i>
-                    <h4 class="link tooltip" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
-                    <i class="material-icons material-icons-info" style="display: none;">info</i>
-                    <p>
-                        Sans ce trait de caractère, je n’aurais peut-être pas eu la vie professionnelle que j’ai aujourd’hui. 
-                       Je sais toujours, au fond de moi, que lorsque je commence un projet, qu’il soit professionnel ou personnel, 
-                       qu’il est atteignable par la volonté et la persévérence. 
-                    </p>
+                    <h4 class="link" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
+                    <i class="material-icons material-icons-info">info</i>
+                    <div class="children-content-summary">
+                        <p>
+                            Sans ce trait de caractère, je n’aurais peut-être pas eu la vie professionnelle que j’ai aujourd’hui. 
+                            Je sais toujours, au fond de moi, que lorsque je commence un projet, qu’il soit professionnel ou personnel, 
+                            qu’il est atteignable par la volonté et la persévérence. 
+                        </p>
+                    </div>
                 </div>
                 <div id="quality-patience" class="children-content">
                     <i class="material-icons">hourglass_full</i>
                     <h4 class="link" title="cliquer pour plus de détail">PATIENCE</h4>
-                    <i class="material-icons material-icons-info" style="display: none;">info</i>
-                    <p>
-                       Je sais que rien ne se fait sans une bonne dose de patience.
-                       À force de patience et de calme, on parvient toujours à un meilleur résultat que si on se
-                       précipite et on s'impatiente quand à la concrétisation d'un projet, qu'il soit professionnel comme
-                       personnel.
-                    </p>
+                    <i class="material-icons material-icons-info">info</i>
+                    <div class="children-content-summary">
+                        <p>
+                            Je sais que rien ne se fait sans une bonne dose de patience.
+                            À force de patience et de calme, on parvient toujours à un meilleur résultat que si on se
+                            précipite et on s'impatiente quand à la concrétisation d'un projet, qu'il soit professionnel comme
+                            personnel.
+                        </p>
+                    </div>
                 </div>
                 <div id="quality-organisation" class="children-content">
                     <i class="material-icons">assignment</i>
                     <h4 class="link" title="cliquer pour plus de détail">ORGANISATION</h4>
-                    <i class="material-icons material-icons-info" style="display: none;">info</i>
+                    <i class="material-icons material-icons-info">info</i>
+                    <div class="children-content-summary">
+                        <p>
+                            Mon organisation et ma rigueur sont souvent mis en avant par mon entourage.
+                            Avant même de commencer à travailler sur un projet, il est nécessaire pour 
+                            moi d'organiser et de structurer les différentes étapes du processus de réalisation.
+                            Pour moi, un projet qui commence avec une mauvaise organisation est un projet compromis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="quality-perseverance-description" class="description children-content-clicked" style="display :none;">
+                <div id="quality-detailled-description-close">
+                    <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
+                </div>
+                <ul>
+                    <li>
+                        <p>Naviguez vers :</p>
+                    </li>
+                    <li>
+                        <i class="material-icons">done</i>
+                        <h4 class="link menu-description-link menu-quality-persistence" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
+                    </li>
+                    <li>
+                        <i class="material-icons">hourglass_full</i>
+                        <h4 class="link menu-description-link menu-quality-patience" title="cliquer pour plus de détail">PATIENCE</h4>
+                    </li>
+                    <li>
+                        <i class="material-icons">assignment</i>
+                        <h4 class="link menu-description-link menu-quality-organisation" title="cliquer pour plus de détail">ORGANISATION</h4>
+                    </li>
+                </ul>
+                <div class="description">
+                    <h3>La générosité dans l'envie</h3>
+                    <img class="picture-quality" src="img/persistence.jpg" alt="persistence">
                     <p>
-                       Mon organisation et ma rigueur sont souvent mis en avant par mon entourage.
-                       Avant même de commencer à travailler sur un projet, il est nécessaire pour 
-                       moi d'organiser et de structurer les différentes étapes du processus de réalisation.
-                       Pour moi, un projet qui commence avec une mauvaise organisation est un projet compromis.
+                        Ma propre définition de la persévérance c'est faire preuve de générosité 
+                        dans l'envie et la volonté d'entreprendre dans ses projets professionnels 
+                        comme personnels.
+                    </p>
+                    <p>
+                        Sans ce trait de caractère, j'aurais eu beaucoup plus de difficultés quand 
+                        à la réalisation de mon projet de reconversion professionnels.
+                    </p>
+                    <p>
+                        Je peux très simplement faire un parallèle concret sur mes débuts dans ma carrière de développeur Web au sein du Secours Populaire. 
+                        N’ayant aucune connaissance et aucune expérience dans le domaine de l’informatique, très peu de personne auraient misé sur 
+                        la réussite de ce projet de reconversion.
+                    </p>
+                    <p> 
+                        Plus précisément, on m’a fixé, dés le début, des objectifs très précis et très ambitieux 
+                        pour moi à l’époque. Il s’agissait de se connecter et de réussir une requête qui me paraît simple aujourd’hui, 
+                        l’affichage d’une information sur une page venant d’une base de donnée en utilisant ADO pour réaliser un simple formulaire en ASP.Net. 
+                        Je suis resté bloqué pendant un long moment sur un problème sans jamais me dire que c’était trop compliqué et que je n’y parviendrait pas. 
+                        J’ai fini par résoudre mon problème grâce à la persévérance, sans cela on aurait fini peut-être par me montrer, 
+                        mais cela n’aurait pas été ma réussite, le fruit de mon propre travail.
                     </p>
                 </div>
+                    
             </div>
-            <div id="quality-perseverance-description" class="description" style="display :none;">
+            <div id="quality-patience-description" class="description children-content-clicked" style="display :none;">
                 <div id="quality-detailled-description-close">
                     <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
                 </div>
-                <h3>La générosité dans l'envie</h3>
-                <img class="picture-quality" src="img/persistence.jpg" alt="persistence">
-                <p>
-                    Ma propre définition de la persévérance c'est faire preuve de générosité 
-                    dans l'envie et la volonté d'entreprendre dans ses projets professionnels 
-                    comme personnels.
-                </p>
-                <p>
-                    Sans ce trait de caractère, j'aurais eu beaucoup plus de difficultés quand 
-                    à la réalisation de mon projet de reconversion professionnels.
-                </p>
-                <p>
-                    Je peux très simplement faire un parallèle concret sur mes débuts dans ma carrière de développeur Web au sein du Secours Populaire. 
-                    N’ayant aucune connaissance et aucune expérience dans le domaine de l’informatique, très peu de personne auraient misé sur 
-                    la réussite de ce projet de reconversion.
-                </p>
-                <p> 
-                    Plus précisément, on m’a fixé, dés le début, des objectifs très précis et très ambitieux 
-                    pour moi à l’époque. Il s’agissait de se connecter et de réussir une requête qui me paraît simple aujourd’hui, 
-                    l’affichage d’une information sur une page venant d’une base de donnée en utilisant ADO pour réaliser un simple formulaire en ASP.Net. 
-                    Je suis resté bloqué pendant un long moment sur un problème sans jamais me dire que c’était trop compliqué et que je n’y parviendrait pas. 
-                    J’ai fini par résoudre mon problème grâce à la persévérance, sans cela on aurait fini peut-être par me montrer, 
-                    mais cela n’aurait pas été ma réussite, le fruit de mon propre travail.
-                </p>
-            </div>
-            <div id="quality-patience-description" class="description" style="display :none;">
-                <div id="quality-detailled-description-close">
-                    <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
-                </div>
+                <ul>
+                    <li>
+                        <p>Naviguez vers :</p>
+                    </li>
+                    <li>
+                        <i class="material-icons">done</i>
+                        <h4 class="link menu-description-link menu-quality-persistence" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
+                    </li>
+                    <li>
+                        <i class="material-icons">hourglass_full</i>
+                        <h4 class="link menu-description-link menu-quality-patience" title="cliquer pour plus de détail">PATIENCE</h4>
+                    </li>
+                    <li>
+                        <i class="material-icons">assignment</i>
+                        <h4 class="link menu-description-link menu-quality-organisation" title="cliquer pour plus de détail">ORGANISATION</h4>
+                    </li>
+                </ul>
                 <h3>Patience est mère de sûreté</h3>
                 <img class="picture-quality" src="img/patience.jpg" alt="patience">
                 <p>
@@ -199,10 +243,27 @@
                     que la patience permet de gagner du temps face à la précipitation et l'éparpillement.
                 </p>
             </div>
-            <div id="quality-organisation-description" class="description" style="display :none;">
+            <div id="quality-organisation-description" class="description children-content-clicked" style="display :none;">
                 <div id="quality-detailled-description-close">
                     <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
                 </div>
+                <ul>
+                    <li>
+                        <p>Naviguez vers :</p>
+                    </li>
+                    <li>
+                        <i class="material-icons">done</i>
+                        <h4 class="link menu-description-link menu-quality-persistence" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
+                    </li>
+                    <li>
+                        <i class="material-icons">hourglass_full</i>
+                        <h4 class="link menu-description-link menu-quality-patience" title="cliquer pour plus de détail">PATIENCE</h4>
+                    </li>
+                    <li>
+                        <i class="material-icons">assignment</i>
+                        <h4 class="link menu-description-link menu-quality-organisation" title="cliquer pour plus de détail">ORGANISATION</h4>
+                    </li>
+                </ul>
                 <h3>S'organiser pour mieux avancer</h3>
                 <img class="picture-quality" src="img/checklist.png" alt="checklist">
                 <p>
@@ -248,57 +309,123 @@
                 <div class="children-content" >
                     <i class="material-icons">create</i>
                     <h4>WEB DESIGN</h4>
-                    <p>Réalisation de site web responsive, animation avec la gestion du DOM, utilisation d'AJAX, refonte de la partie graphique de site web</p>
+                    <div class="children-content-summary">
+                        <ul>
+                            <li>
+                                - Réalisation de site web responsive
+                            </li>
+                            <li>
+                                - Animation avec la gestion du DOM
+                            </li>
+                            <li>
+                                - Utilisation d'AJAX
+                            </li>
+                            <li>
+                                - Refonte graphique de site web
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="children-content">
-                        <i class="material-icons">code</i>
-                        <h4>DÉVELOPPEMENT</h4>
-                        <p>Utilisation de la technologie ASP.Net (WebForms et MVC) et C#, 
-                           programmation orientée objet (POO), 
-                           ADO.Net et Entity FrameWork pour la liaison avec la base de donnée, 
-                           Utilisation de Reporting Services pour la création de rapports téléchargeable.
-                        </p>
+                    <i class="material-icons">code</i>
+                    <h4>DÉVELOPPEMENT</h4>
+                    <div class="children-content-summary">
+                        <ul>
+                            <li>
+                                - Utilisation de la technologie ASP.Net (WebForms et MVC) et C#
+                            </li>
+                            <li>
+                                - Programmation orientée objet (POO)
+                            </li>
+                            <li>
+                                - ADO.Net et Entity FrameWork pour la liaison avec la base de donnée
+                            </li>
+                            <li>
+                                - Utilisation de Reporting Services pour la création de rapports téléchargeable
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="children-content">
-                        <i class="material-icons">storage</i>
-                        <h4>BASE DE DONNÉES</h4>
-                        <p>Utilisation de la technologie MicroSoft SQL Server pour la gestion des bases de données.
-                           Rédaction de requêtes simples et imbriquées, utilisation des procédures stockées, 
-                           création de base de données relationnelles, utilisation de la technologie Full Text Search 
-                           pour la recherche par mot-clé.
-                        </p>
+                    <i class="material-icons">storage</i>
+                    <h4>BASE DE DONNÉES</h4>
+                    <div class="children-content-summary">
+                        <ul>
+                            <li>
+                                - Utilisation de la technologie MicroSoft SQL Server pour la gestion des bases de données
+                            </li>
+                            <li>
+                                - Rédaction de requêtes simples et imbriquées
+                            </li>
+                            <li>
+                                - Utilisation des procédures stockées
+                            </li>
+                            <li>
+                                - Création de base de données relationnelles
+                            </li>
+                            <li>
+                                - utilisation de la technologie Full Text Search pour la recherche par mot-clé
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="children-content">
-                        <i class="material-icons">school</i>
-                        <h4>FORMATION</h4>
-                        <p>Mise en place d'atelier formation et formation dans différents cadres et contextes. 
-                           Organisation et mise en place des formations (mailing, appel, préparation).
-                           Présentation et organisation de débat lors de ces formations.
-                        </p>
+                    <i class="material-icons">school</i>
+                    <h4>FORMATION</h4>
+                    <div class="children-content-summary">
+                        <ul>
+                            <li>
+                                - Mise en place d'atelier formation et formation dans différents cadres et contextes
+                            </li>
+                            <li>
+                                - Organisation et mise en place des formations (mailing, appel, préparation)
+                            </li>
+                            <li>
+                                - Présentation et organisation de débat lors de ces formations
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="children-content">
-                        <i class="material-icons">info</i>
-                        <h4>COMPÉTENCES ANNEXES WEB</h4>
-                        <p>
-                           Java (Swing, JEE, application n-tiers), PHP et Node Js (Notions).
-                           Visual Basic (Utilisation dans la technologie Reporting Services, Réalisation d'un jeu simple).
-                           Angular (Conception d'une mini-application type réseau social).
-                           Babylon Js (Conception d'un mini-jeu en 3D en JavaScript).
-                        </p>
+                    <i class="material-icons">info</i>
+                    <h4>COMPÉTENCES ANNEXES WEB</h4>
+                    <div class="children-content-summary">
+                        <ul>
+                            <li>
+                                - Java (Swing, JEE, application n-tiers), PHP et Node Js (Notions)
+                            </li>
+                            <li>
+                                - Visual Basic (Utilisation dans la technologie Reporting Services, Réalisation d'un jeu simple)
+                            </li>
+                            <li>
+                                - Angular (Conception d'une mini-application type réseau social)
+                            </li>
+                            <li>
+                                - Babylon Js (Conception d'un mini-jeu 3D en JavaScript)
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="children-content">
-                        <i class="material-icons">event_note</i>
-                        <h4>GESTION DES PROJETS</h4>
-                        <p>
-                           Rédaction de rapport préliminaire avant la mise en place d'une nouvelle solution technique.
-                           Élaboration d'un calendrier prévisionnel.
-                           Organisation de réunions préalables à la phase de développement du projet.
-                           Évolution et correction prise en compte lors du cycle de développement du projet. 
-                        </p>
+                    <i class="material-icons">event_note</i>
+                    <h4>GESTION DES PROJETS</h4>
+                    <div class="children-content-summary">
+                        <ul>
+                            <li>
+                                - Rédaction de rapport préliminaire avant la mise en place d'une nouvelle solution technique
+                            </li>
+                            <li>
+                                - Élaboration d'un calendrier prévisionnel
+                            </li>
+                            <li>
+                                - Organisation de réunions préalables à la phase de développement du projet
+                            </li>
+                            <li>
+                                - Évolution et correction prise en compte lors du cycle de développement du projet
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- <div id="children-content-picture" class="children-content">
-                    <img id="skills-logo" src="../img/computer.jpg" alt="computer">
-                </div> -->
             </div>
         </section>
         <section class="page-section" id="project">
@@ -307,27 +434,127 @@
                 <hr class="title-deco" />
                 <h3>Voici quelques projets sur lesquels j'ai travaillé, professionnels comme personnels</h3>
             </div>
-            <div class="project-container-content">
-                <div id="1" class="project-children-content" >
-                    <div id="picture-title-1" class="picture-project-title" style="display: none;"><p>Atrium : la charte de confidentialité</p></div>
-                    <img class="picture-project" src="img/Charte_Confidential.jpg" alt="Charte_Confidential">
+            <div class="tiles">
+                <a href="#" class="tile" style="background-image:url('img/Charte_Confidential.jpg')">
+                  <div id="1" class="description-tile">
+                    <h4>Atrium : Charte de confidentialité</h4>
+                    <p>Mise en place de la charte de confidentialité</p>
+                  </div>
+                </a>
+                <a href="#" class="tile" style="background-image:url('img/PopFormulaire.JPG')">
+                  <div id="2" class="description-tile">
+                    <h4>Atrium : Mini-FrameWork</h4>
+                    <p>Mise en place d'un mini-FrameWork pour les formulaires récurrents de PopFormulaire</p>
+                  </div>
+                </a>
+                <a href="#" class="tile" style="background-image:url('img/Dynamic_Search_Bar.jpg')">
+                  <div id="3" class="description-tile">
+                    <h4>Atrium : Recherche dynamique</h4>
+                    <p>Mise en place d'une barre de recherche dynamique sur la page d'accueil d'Atrium</p>
+                  </div>
+                </a>
+                <a href="#" class="tile" style="background-image:url('img/Refonte_Graphique.jpg')">
+                  <div id="4" class="description-tile">
+                    <h4>Atrium : Mise à jour graphique du site</h4>
+                    <p>Refonte graphique d'Atrium suivant la charte graphique du Secours Populaire Français</p>
+                  </div>
+                </a>
+                <a href="#" class="tile" style="background-image:url('img/fruits.jpg')">
+                    <div id="5" class="description-tile">
+                      <h4>Visual Basic : le fructos Game</h4>
+                      <p>Création d'un mini-jeu en Visual Basic, le fructos game</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="page-section" id="timeline">
+            <div class="title" id="project-title">
+                <h2>MON PARCOURS</h2>
+                <hr class="title-deco" />
+                <h3>Voici quelques unes de mes expériences professionnelles dans l'ordre antéchronologique</h3>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>Novembre 2016 - Aujourd'hui</h3>
+                        <span>Développeur Web en alternance au Secours Populaire Français</span>
+                        <p>
+                            - Conception et développement d’applications web en ASP.Net et C# pour la plateforme web du Secours Populaire Français 
+                            (<a href="https://atrium.secourspopulaire.fr/Pages/Authentication/Login.aspx" target="blank">Atrium</a>),
+                        </p>
+                        <p>
+                            - Conception et développement de bases de données pour les applications développées pour la plateforme Atrium (Microsoft SQL Server).
+                        </p>
+                    </div>
                 </div>
-                <div id="2" class="project-children-content" >
-                    <div id="picture-title-2" class="picture-project-title" style="display: none;"><p>Atrium : le mini-FrameWork pour PopFormulaire</p></div>
-                    <img class="picture-project" src="img/PopFormulaire.JPG" alt="PopFormulaire">
+                
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>Septembre 2015 - Juillet 2016</h3>
+                        <span>Service civique au sein de l’Association au Service de l’Action Humanitaire</span>
+                        <p class="timeline-content-ajust">
+                            - Administration de deux sites web et de deux applications mobiles : le portail-humanitaire et le salon des solidarités.
+                        </p>
+                        <p class="timeline-content-ajust">
+                            - Conception, mise en place et animation d’ateliers-formation sur des solutions de financements.
+                        </p>
+                    </div>
                 </div>
-                <div id="3" class="project-children-content" >
-                    <div id="picture-title-3" class="picture-project-title" style="display: none;" ><p>Atrium : la barre de recherche dynamique</p></div>
-                    <img class="picture-project" src="img/Dynamic_Search_Bar.jpg" alt="Dynamic_Search_Bar">
+                
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>Septembre 2013 - Juin 2015</h3>
+                        <span>Ministère de l'Éducation Nationale</span>
+                        <p>
+                            Professeur des écoles en alternance en classe de CM2, Grande Section, CP/CM1, 
+                            Petite Section/ Moyenne Section, dans le département de l’Essonne (91).
+                        </p>
+                    </div>
                 </div>
-                <div id="4" class="project-children-content" >
-                    <div id="picture-title-4" class="picture-project-title" style="display: none;"><p>Babylon Js : le lapin Demoniak</p></div>
-                    <img class="picture-project" src="img/lapin_demoniak.jpg" alt="lapins_demoniak">
+                
+        </section>
+        <section class="page-section" id="a-propos-de-moi">
+            <div class="title" id="project-title">
+                <h2>À PROPOS DE MOI !</h2>
+                <hr class="title-deco" />
+                <h3>Pour un peu mieux me connaître !</h3>
+            </div>
+            <div class="a-propos-de-moi-container">
+                <div class="a-propos-de-moi-container-picture">
+                    <img style="float:left; width:15%; height: 15%;" src="img/a_propos_de_moi.jpg" alt="arbre à propos de moi" />
                 </div>
-                <div id="5" class="project-children-content" >
-                    <div id="picture-title-5" class="picture-project-title" style="display: none;"><p>Visual Basic : le fructos Game</p></div>
-                    <img class="picture-project" src="img/fruits.jpg" alt="fruits">
-                </div>
+                    <div class="a-propos-de-moi-container-description">
+                        <p>
+                            Aujourd’hui développeur Web au sein du Secours Populaire Français, je fais face à un nouveau défi professionnel 
+                            qui m’a déjà apporté et qui continue à beaucoup m’apporter en tant que professionnel mais aussi en tant que jeune actif 
+                            depuis maintenant plus de 2 ans.
+                        </p>
+                        <p>
+                            Que ce soit au Commissariat à l’Énergie Atomique ou encore dans les écoles en tant qu’apprenti professeur des écoles 
+                            mes expériences passées m’ont amené à mûrir en tant que personne. 
+                        </p>
+                        <p>
+                            Étant curieux, la vie est pour moi une succession de découverte et de situations nouvelles et intrigantes. 
+                            Histoire, sports automobiles, astronomie, technologie, la liste de mes centres d’intérêt seraient bien trop longue à faire.
+                        </p>
+                        <p>
+                            Alors n’hésitez pas, si vous voulez en savoir encore un peu plus sur moi, vous pouvez continuer de visiter mon portfolio.
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <section class="page-section" id="chantier">
+            <div class="title" id="project-title">
+                <h2>EN CHANTIER !</h2>
+                <hr class="title-deco" />
+                <h3>Quelques parties du portfolio sont encore en chantier mais elles arriveront incessament sous peu !</h3>
+            </div>
+            <div class="chantier" style="text-align: center; margin-bottom: 50px;">
+                <img style="width:40%; height: 40%;" src="img/chantier.jpg" alt="chantier" />
             </div>
         </section>
     </section>
@@ -335,223 +562,313 @@
         <div id="project-detailled-description-close">
             <img id="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
         </div>
+        <div id="projects-detailled-description-confidentiality">
+            <div id="projects-detailled-description-confidentiality-container-picture">
+                <img id="projects-detailled-description-confidentiality-picture" src="img/ConfidentialityAgreement.png" alt="charte de confidentialité">
+            </div>
+            <div id="projects-detailled-description-confidentiality-container-description">
+                <h1>MISE EN PLACE DE LA CHARTE DE CONFIDENTIALITÉ D'ATRIUM</h1>
+                <h5>Présentation :</h5>
+                <p>
+                    Dans le cadre de mon contrat en alternance au sein du Secours Populaire Français, 
+                    j’ai dû mettre en place une charte de confidentialité pour l’ensemble de l’application 
+                    Atrium. Cette charte était à la base visible que dans l’une des applications d’Atrium, 
+                    Pop Accueil. L’objectif ici étant de faire en sorte que l’ensemble des utilisateurs 
+                    d’Atrium signent la charte de confidentialité 
+                    et ce dans le cadre de la nouvelle réglementation 
+                    pour la protection des données qui devaient être mise en place avant mai 2018.
+                </p>
+                <h5>Ma contribution :</h5>
+                <p>
+                    J’ai dû développer et mettre en place la charte de confidentialité en respectant plusieurs étapes. 
+                </p>
+                <p>
+                    La première étape consistait à faire évoluer, très simplement le modèle de données afin de pouvoir utiliser plusieurs versions de la charte. 
+                    La charte s’affichant ensuite en utilisant un modèle directement importé de la base de donnée. 
+                    Il a fallu par la suite mettre à jour le système d’accès aux données de la solution Atrium. 
+                    Comme la charte était déjà implémentée au début de la solution Atrium, soit au début des années 2010, 
+                    il fallait que je modifie une partie traitant de l’accès aux données de la charte dans un système complexe 
+                    qui simule le comportement d’un ORM (Object Relation Mapping) plus moderne comme Entity Framework.
+                </p>
+                <p>
+                    La prochaine étape consistait à mettre en place un petit générateur de Template « maison » 
+                    qui consistait simplement à récupérer les informations issues de la base de donnée et de remplacer les parties entre crochets par les contrôles voulus, 
+                    soit des zones de texte à remplir avec des validateurs des valeurs rentrées dans ces zones de texte. Pour cela, le JavaScript est utilisé 
+                    pour le placement des contrôles côté client et la technologie ASP.Net WebForm est utilisée pour le traitement de ces contrôles et 
+                    pour aussi notamment la validation des valeurs rentrées dans ces derniers.
+                </p>
+                <p>
+                    La dernière étape consistait à réaliser le même processus au niveau du rapport et de l’outil utilisé pour générer les rapports 
+                    soit le reporting services de Microsoft SQL.
+                </p>
+                <p>
+                    Ce système permet ainsi de faire évoluer le contenu de la charte et ce de façon dynamique, en plaçant le contenu HTML directement dans une colonne de la table 
+                    permettant d’accéder aux données de la charte de confidentialité.
+                </p>
+                <p>
+                    Aujourd’hui, cette charte est signée une fois par an par l’ensemble des utilisateurs d’Atrium et deux versions se sont succédé l’une à l’autre.
+                </p>
+                <h5>Compétences utilisées :</h5>
+                <ul>
+                    <li>
+                        Organiser une réunion (Sujet, organisation, relance, gestion du temps, mailing, etc…)
+                    </li>
+                    <li>
+                        Reprendre du code existant
+                    </li>
+                    <li>
+                        Créer des scripts SQL (Scripts SQL)
+                    </li>
+                    <li>
+                        Créer un Template pour l’application (C# et ASP.Net WebForm, JavaScript)
+                    </li>
+                    <li>
+                        Créer le Template pour le reporting (SSRS « Reporting Service »)
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div id="projects-detailled-description-mini-framework">
             <div id="projects-detailled-description-mini-framework-container-picture">
                 <img id="projects-detailled-description-mini-framework-picture" src="img/PopFormulaire_MiniFrameWork.JPG" alt="mini-FrameWork-PopFormulaire">
             </div>
             <div id="projects-detailled-description-mini-framework-container-description">
                 <h1>MISE EN PLACE D'UN MINI-FRAMEWORK POUR POP-FORMULAIRE</h1>
-                <!-- Owl Carousel plugin used -->
-                <div id="sync1" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <h5>Le mini-framework, un besoin pas si évident au départ :</h5>
-                        <p>
-                            Ce projet part d’un besoin qui s’est développé au cours du temps.
-                        </p>
-                        <p>
-                            En effet, nous avons constaté que plusieurs questionnaires récurrents demandaient un développement 
-                            trop spécifiques car le besoin étaient abordés d’un point de vue qui n’était pas assez globale à première vue.
-                        </p>
-                        <p>
-                            Bien sûr un outil existe déjà dans la plateforme Atrium, Wysuform, 
-                            mais lors des réunions que j’ai eue avec les différents acteurs de la mise en place de ces questionnaires, 
-                            cet outil est difficile à maîtriser et les informations obtenues sont difficilement exploitables (Document CSV) 
-                            pour une personne non-initiée.
-                        </p>
-                        <p>
-                            La mise en place du projet s’est dessiné au fur et à mesure de l’avancement des réunions avec le métier, 
-                            soit les personnes concernées par le projet (responsable de la Solidarité France, des Villages Copains du Monde, etc..).
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>La co-construction, grande dessinatrice de l’idée du mini-framework…  :</h5>
-                        <p>
-                            À la suite des multiples réunions que j’ai eu avec le métier, 
-                            nous avons organisé une réunion préalable à la mise en place du projet. 
-                        </p>
-                        <p>
-                            Plusieurs idées, venant de ma part mais aussi de mon responsable, 
-                            de mon tuteur ont été étudiés au cours de cette mise au point 
-                            (éditeur « light » de questionnaire, générateur de rapport via l’outil Wysuform, etc…). 
-                        </p>
-                        <p>
-                            Au cours de cette réunion, et après avoir demandé avis au Directeur de la Division Informatique, 
-                            nous sommes arrivés à un consensus de l’ensemble de ces idées, 
-                            la mise en place d’un mini-framework pour les questionnaires récurrents. 
-                        </p>
-                        <p>
-                            En effet, il était important de standardiser, faciliter l’édition des questionnaires sans réinventer 
-                            la roue et l’éditeur Wysuform qui est très complet. 
-                            De plus, si nous laissons trop de liberté de manœuvre au métier, 
-                            l’exploitation des données risque de devenir de plus en plus complexe au cours du cycle de vie du projet.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>… Mais aussi motrice des objectifs du projet :</h5>
-                        <p>
-                            Ce projet est né d’une co-construction et d’une idée qui s’est construite en équipe, 
-                            la mise en place d’un framework qui facilitera l’édition de formulaire pour notre propre équipe interne. 
-                            L’objectif principal reste de faciliter l’édition de formulaire. 
-                        </p>
-                        <p>
-                            Néanmoins, nous voulons, tout en standardisant l’organisation de la gestion des données, 
-                            garder la maîtrise de ce qui est développé dans l’application. 
-                        </p>
-                        <p>
-                            C’est la raison pour laquelle ce framework nous est directement destiné 
-                            mais qu’il servira forcément au métier indirectement 
-                            car il aura un résultat final beaucoup plus rapide qu’auparavent.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>La centralisation des données, l’enjeu principal :</h5>
-                        <p>
-                            L’enjeu est centrale pour le module de l’application pour lequel ce framework a été developpée, « PopFormulaire ». 
-                        </p>
-                        <p>
-                            En effet, avant la réalisation du projet, pour chaque questionnaire un nouveau modèle de donnée était créé. 
-                            Le problème, c’est qu’au cours du temps, on se retrouve avec un modèle complexe à gérer car trop spécifique 
-                            pour chaque questionnaire.  
-                        </p>
-                        <p>
-                            Ainsi, l’enjeu est la simplification du modèle de donnée mais aussi une optimisation de la maintenance 
-                            du code par une refactorisation globale de ce dernier.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>La mise en place d’un mini-Framework, un projet sur plusieurs étapes :</h5>
-                        <p>
-                            On comprend facilement que la mise en place de ce mini-framework permet de centraliser 
-                            où la donnée est stockée grâce à la création d’un modèle de donnée unique pour ce type de questionnaire. 
-                            Il s’agit de la 1ère étape sur laquelle j’ai travaillé sur ce projet.
-                        </p>
-                        <p>
-                            La 2ème étape consistait en une réorganisation globale côté code, 
-                            avec une refactorisation de l’ensemble du code utilisé pour la génération des questionnaires, 
-                            de la partie administration, de la génération des rapports.
-                        </p>
-                        <p>
-                            La 3ème étape consistait à la mise en place d’une automatisation de l’accessibilité à l’information 
-                            pour la partie vue du formulaire. 
-                            L’information de la vue est pilotée suivant l’organisation de l’information côté Base de donnée, 
-                            le Modèle, et non le contraire. C’est une conception hybride entre le spécifique et l’éditeur pure de questionnaire.
-                        </p>
-                        <p>
-                            La dernière étape consistait à affiner et à réadapter l’interface suivant cette réorganisation 
-                            de l’accessibilité aux questionnaires récurrent, notamment au niveau du module d’administration 
-                            mais aussi au niveau du reporting, globale comme spécifique par structure 
-                            (fédérations appartentant au Secours Populaire Français).
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>Le mini-framework, un projet sans résultat visible mais avec de grandes conséquences  :</h5>
-                        <p>
-                            Actuellement, le projet en est à sa phase finale. 
-                            Nous avons constaté un gain de productivité non négligeable par rapport à notre ancienne façon 
-                            de faire de l’ordre du double voire du triple.
-                        </p>
-                        <p>
-                            De plus, nous avons constaté très rapidement que les futures évolutions que l’on aimerait 
-                            mettre en place à terme seront plus facile à implémenter 
-                            car le travail de refactorisation du code nous le permettra.
-                        </p>
-                        <p>
-                            Enfin, concernant le métier, nous devons, prochainement, nous remettre en contact 
-                            avec lui afin de commencer à utiliser cet outil qui sera autant utile pour nous que pour le métier.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>Un futur ouvert vers une grande évolutivité :</h5>
-                        <p>
-                            Ce projet, de par sa philosophie, nous donnera la possibilité d’aller plus loin 
-                            dans ce qui a déjà été fait, comme la mise en place d’un véritable éditeur finale 
-                            mais à notre seule disposition afin de garder le contrôle de la gestion de l’information.
-                        </p>
-                        <p>
-                            De plus, comme la maintenabilité du code est plus optimale que par le passé, 
-                            nous pouvons plus sereinement envisager la migration du code de ce projet 
-                            vers une technologie plus récente que celle que nous utilisons aujourd’hui (passage du WebForm au MVC Classique/Core).
-                        </p>
-                        <p>
-                            Ce projet, comme beaucoup des projets que j’ai mené, est amené à évoluer et à rester vivant tout au long de son cycle de vie.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>Une étape importante vers une véritable autonomie professionnelle :</h5>
-                        <p>
-                            Ce projet fait partie de ceux qui m’ont marqué pour plusieurs raisons. 
-                        </p>
-                        <p>
-                            Avant de commmencer ce projet, je ne savais pas encore où j’en étais au niveau 
-                            de ma progression en terme de compétences, techniques comme humaine. 
-                        </p>
-                        <p>
-                            Tout au long de ce projet, mon tuteur/responsable m’a donné des objectifs précis à atteindre 
-                            tout en me laissant une grande autonomie. Il s’agissait d’un cap important à franchir pour moi comme pour mon tuteur. 
-                        </p>
-                        <p>
-                            Tout au long de ce projet, mon tuteur/responsable m’a donné des objectifs précis à atteindre 
-                            tout en me laissant une grande autonomie. Il s’agissait d’un cap important à franchir pour moi comme pour mon tuteur. 
-                        </p>
-                        <p>
-                            Par exemple, mon m’a demandé d’établire un planning prévisionnel de livrable sans me donner d’indications particulières. 
-                            J’ai ainsi été surpris de constater que j’avais été beaucoup plus rapide que je l’avais imaginé. 
-                        </p>
-                        <p>
-                            Ce projet est parmi celui qui m’a donné le plus de capital confiance quand à mes capacité à mener un projet 
-                            de bout en bout et ce de manière autonome, sans avoir une aide constante de l’extérieur. 
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h5>Compétences utilisées :</h5>
-                        <ul>
-                            <li>
-                                Organiser une réunion (Sujet, organisation, relance, gestion du temps, mailing, etc…)
-                            </li>
-                            <li>
-                                Mettre en place un modèle de donnée (MCD, Scripts SQL)
-                            </li>
-                            <li>
-                                Refactorisation du code de l’application (C# et ASP.Net WebForm)
-                            </li>
-                            <li>
-                                Reconception du reporting (SSRS « Reporting Service »)
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                  
-                <div id="sync2" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <h1>1</h1></div>
-                    <div class="item">
-                        <h1>2</h1></div>
-                    <div class="item">
-                        <h1>3</h1></div>
-                    <div class="item">
-                        <h1>4</h1></div>
-                    <div class="item">
-                        <h1>5</h1></div>
-                    <div class="item">
-                        <h1>6</h1></div>
-                    <div class="item">
-                        <h1>7</h1></div>
-                    <div class="item">
-                        <h1>8</h1></div>
-                    <div class="item">
-                        <h1>9</h1></div>
-                </div>
+                <h5>Présentation :</h5>
+                <p>
+                    Dans le cadre de mon contrat en alternance au sein du Secours Populaire Français, 
+                    j’ai dû mettre en place un mini-Framework pour une des applications d’Atrium, Pop Formulaire. 
+                    Cette application permet de répondre à des questionnaires créés spécifiquement pour un bilan d’évènement par exemple.
+                </p>
+                <p>
+                    L’idée était de créer un environnement permettant la création générique de ce type de formulaire au sein d’Atrium. 
+                    En effet, lorsqu’un formulaire est créé dans cette application, un modèle spécifique de base de données est créé. 
+                    L’objectif ici est de centraliser les données dans un modèle générique dans la base de données afin d’accélérer et de faciliter 
+                    le développement de ce type de formulaire.
+                </p>
+                <h5>Ma contribution</h5>
+                <p>
+                    Il s’agissait ici avant tout de connaître les besoins des personnes qui travaillaient en interne au sein du Secours Populaire Français. 
+                    Ainsi, j’ai eu l’occasion de réaliser des points et des rendez-vous avec certaines personnes qui organisaient des évènements et 
+                    qui étaient habituellement en charge d’exploiter les informations de ces bilans publiés sur Pop Formulaire. 
+                    J’ai pu constater que même si un outil d’édition de formulaire existait, Wysuform, peu de personnes l’utilisaient de par sa complexité 
+                    et les informations obtenues sont difficilement exploitables (Document CSV) pour une personne initiée.
+                </p>
+                <p>
+                    D’un point de vue technique, plusieurs étapes étaient nécessaires quant à sa concrétisation. 
+                    La première consistait à créer un modèle unique de donnée pour ce type de formulaire. 
+                    Cela nécessitait un travail préalable de conception (mise en place d’un modèle conceptuel de donnée ou MCD) puis de créer les scripts 
+                    de création du modèle dans la base de données via la technologie Microsoft SQL.
+                    La 2ème étape consistait à réorganiser le code de l’application en factorisant ce dernier pour la génération des formulaires, 
+                    de la partie administration en utilisant la technologie Asp.Net WebForm. 
+                    Mais aussi à créer un modèle générique de rapport via la technologie SQL Server Reporting Services.
+                    La dernière étape consistait à automatiser le système de gestion de droit d’accès pour la partie vue du formulaire. 
+                    L’information de la vue était pilotée suivant l’organisation de l’information côté Base de donnée et non le contraire. 
+                    C’est ainsi une conception hybride entre le spécifique et l’éditeur pure de questionnaire.    
+                </p>
+                <p>
+                    Ce système est aujourd’hui mis en place sur Atrium. 
+                    De plus, sa conception permet de le faire évoluer en lui apportant la génération de nouveaux contrôles par exemple.
+                </p>
+                <h5>Compétences utilisées :</h5>
+                <ul>
+                    <li>
+                        Organiser une réunion (Sujet, organisation, relance, gestion du temps, mailing, etc…)
+                    </li>
+                    <li>
+                        Mettre en place un modèle de donnée (MCD, Scripts SQL)
+                    </li>
+                    <li>
+                        Refactorisation du code de l’application (C# et ASP.Net WebForm)
+                    </li>
+                    <li>
+                        Reconception du reporting (SSRS « Reporting Service »)
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-    <section id="chantier">
-        <div class="title" id="project-title">
-            <h2>EN CHANTIER !</h2>
-            <hr class="title-deco" />
-            <h3>Quelques parties du portfolio sont encore en chantier mais elles arriveront incessament sous peu !</h3>
+        <div id="projects-detailled-description-dynamic-searchBar">
+            <div id="projects-detailled-description-dynamic-searchBar-container-picture">
+                <img id="projects-detailled-description-dynamic-searchBar-picture" src="img/Dynamic_Search_Bar.jpg" alt="barre de recherche dynamique">
+            </div>
+            <div id="projects-detailled-description-searchBar-container-description">
+                <h1>CRÉATION D'UNE BARRE DE RECHERCHE DYNAMIQUE</h1>
+                <h5>Présentation :</h5>
+                <p>
+                    Dans le cadre de mon contrat en alternance au sein du Secours Populaire Français, 
+                    on m’a demandé de créer une barre de recherche dynamique 
+                    pour la page d’accueil du site métier du Secours Populaire, Atrium.
+                </p>
+                <p>
+                    L’idée était de créer une barre de recherche permettant de rechercher directement une structure ou un ami avec une mise à jour automatique 
+                    à chaque lettre tapée et entrée dans la barre de recherche par l’utilisateur. 
+                    Cette barre de recherche devant permettre d’afficher la structure de rattachement de l’ami 
+                    mais aussi le numéro de téléphone et l’adresse e-mail « public » de l’ami. Un ami est un bénévole, 
+                    un bénéficiaire ou encore un salarié de l’association.
+                </p>
+                <h5>Ma contribution</h5>
+                <p>
+                    L’idée principale était d’utiliser une technologie mise en place spécifiquement par Microsoft pour son moteur SQL, 
+                    la technologie de recherche <a href="https://docs.microsoft.com/fr-fr/sql/relational-databases/search/full-text-search?view=sql-server-2014" target="blank">« Full Text Search»</a>. 
+                    Cette technologie permet de rechercher dynamiquement le groupe de lettre tapé dans une requête et qui est contenu dans un mot. 
+                    Cela reprend en partie les idées de la technologie 
+                    <a href="https://www.elastic.co/fr/products/elasticsearch" target="blank">« Elastic Search »</a> 
+                    mais pour les bases de données en Microsoft SQL.
+                </p>
+                <p>
+                    Il s’agit ici du côté base de données mais il fallait aussi exploiter ce que retournait la requête en « Full Text » et ce de façon dynamique. 
+                    Et pour cela, il a fallu avec la technologie utilisée, Asp.Net WebForm, créer un « WebService » spécifiquement pour la page d’accueil. 
+                    Ce système permettant de récupérer le résultat de la recherche mais aussi de traiter la donnée et l’affichage 
+                    suivant le type de retour de la recherche « FullText ».
+                </p>
+                <p>
+                    Une fois ceci mis en place, il a fallu créer l’interface de la barre de recherche à proprement parler. 
+                    Et pour cela, un Framework, « Telerik » a été utilisé pendant ce projet. 
+                    Ce Framework permet d’utiliser des contrôles pour générer des tableaux, des modèles d’interfaces particuliers et différents de ceux déjà existants 
+                    dans le Framework de base. 
+                </p>
+                <p>
+                    Enfin, pour que cela se génère dynamiquement à chaque frappe de l’utilisateur, il a fallu utiliser AJAX en JavaScript qui est un ensemble de technologie 
+                    permettant de gérer dynamiquement le résultat d’une requête effectuée via un évènement, comme l’appui sur la touche d’un clavier par exemple.
+                </p>
+                <p>
+                    Aujourd’hui, la barre de recherche est bien présente sur Atrium et elle est utilisée de plus en plus régulièrement par ses utilisateurs.
+                </p>
+                <h5>Compétences utilisées :</h5>
+                <ul>
+                    <li>
+                        Utiliser AJAX
+                    </li>
+                    <li>
+                        Utiliser un Framework spécifique (« Telerik »)
+                    </li>
+                    <li>
+                        Utiliser la technologie « Full-Text Search » pour la recherche par mot-clé
+                    </li>
+                    <li>
+                        Rechercher les méthodes d’implémentation de chaque brique technique
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div style="text-align: center; margin-bottom: 50px;">
-            <img style="width:40%; height: 40%;" src="img/chantier.jpg" alt="chantier" />
+        <div id="projects-detailled-description-graphic-maj">
+            <div id="projects-detailled-description-graphic-maj-container-picture">
+                <img id="projects-detailled-description-graphic-maj-picture" src="img/Refonte_Graphique.jpg" alt="Refonte graphique d'Atrium">
+            </div>
+            <div id="projects-detailled-description-graphic-maj-container-description">
+                <h1>REFONTE GRAPHIQUE D'ATRIUM</h1>
+                <h5>Présentation :</h5>
+                <p>
+                    Dans le cadre de mon contrat en alternance au sein du Secours Populaire Français, 
+                    j’ai été sollicité pour moderniser le design graphique du site Atrium.
+                </p>
+                <p>
+                    L’idée était de se baser sur la mise à jour de l’une des applications du site permettant de gérer les amis sur Atrium, Pop Ami. 
+                    La mise à jour étant aussi graphique, il fallait que la partie plus ancienne de l’application soit le plus proche possible 
+                    de ce qui avait été fait graphiquement sur cette partie 
+                    mais aussi que la mise à jour graphique soit le plus en conformité possible avec la charte graphique du Secours Populaire Français.
+                </p>
+                <h5>Ma contribution</h5>
+                <p>
+                    Il s’agit d’une contribution un peu particulière pour moi. 
+                    En effet, pour la première fois, j’apportais directement une compétence que j’avais développée avant de rentrer au Secours Populaire Français. 
+                    En effet, j’ai commencée à utiliser le HTML et le CSS en autodidacte lorsque je n’étais pas encore développeur Web en alternance.
+                </p>
+                <p>
+                    Il s’agit ainsi pour moi d’utiliser ces compétences et de les mettre à contribution dans un cadre pratique et surtout professionnel. 
+                    Il s’agissait aussi d’une première pour moi car pour la première fois, je travaillais sur un site de taille plus importante qu’habituellement.
+                </p>
+                <p>
+                    J’ai pris un certain plaisir à réaliser cette tâche car le HTML et le CSS sont pour moi un système permettant d’agencer graphiquement 
+                    un site comme un assemblage de briques Lego. 
+                    Néanmoins, la principale difficulté consistait à mettre à jour le site tout en limitant au maximum les régressions graphiques comme 
+                    une barre qui bavent ou encore un tableau mal agencé. 
+                    J’ai ainsi utilisé le CSS déjà existant pour ensuite juste mettre à jour certaines règles graphiques dans un maximum de classes CSS déjà existantes.
+                </p>
+                <p>
+                    Ce projet a été un travail de compromis continu car je voulais mettre en place certaines choses qui n’étaient pas forcément compatibles 
+                    avec les contraintes imposées. 
+                    J’ai ainsi dû optimiser ce qui avait déjà été fait via des réunions et des retours effectués par l’ensemble de l’équipe de la DSI 
+                    mais aussi par le graphiste du Secours Populaire Français qui suit de près l’ensemble des évolutions graphiques des sites du Secours Populaire Français.
+                </p>
+                <p>
+                    Aujourd’hui, cette mise à jour est visible de tous et l’impact qu’elle a eu sur l’ensemble des utilisateurs d’Atrium est direct. 
+                    Elle a permis de moderniser l’application graphiquement.
+                </p>
+                <h5>Compétences utilisées :</h5>
+                <ul>
+                    <li>
+                        Refonte graphique de site web (HTML / CSS)
+                    </li>
+                    <li>
+                        Prendre en compte les évolutions demandées lors du cycle de développement d’un projet
+                    </li>
+                    <li>
+                        S’adapter
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="projects-detailled-description-fructos-game">
+            <div id="projects-detailled-description-fructos-game-container-picture">
+                <img id="projects-detailled-description-fructos-game-picture" src="img/fruits_hd.jpg" alt="Création du jeu fructos game">
+            </div>
+            <div id="projects-detailled-description-fructos-game-container-description">
+                <h1>CRÉATION D'UN MINI JEU EN VISUAL BASIC : LE FRUCTOS GAME</h1>
+                <h5>Présentation :</h5>
+                <p>
+                    Dans le cadre de mon année de licence robotique en 2011, on m’a proposé un exercice à réaliser en 
+                    <a href="https://docs.microsoft.com/fr-fr/dotnet/framework/winforms/" target="blank">WinForm</a> avec le langage Visual Basic, 
+                    souvent utilisé pour la création de Macro sur Excel.
+                </p>
+                <p>
+                    L’idée était d’utiliser les contrôles WinForm déjà existants dans l’éditeur proposé pour réaliser un petit jeu. Il s’agissait de cliquer 
+                    sur des fruits qui défilaient sur un écran de manière aléatoire tout en évitant de cliquer sur une bombe et ce sur un temps imparti.
+                </p>
+                <h5>Pourquoi j’ai envie de parler de ce projet ? :</h5>
+                <p>
+                    Ce petit exercice, je n’ai pas eu l’opportunité de le terminer en cours à l’époque car il s’agissait pour moi de la 1ère fois que je voyais ce genre de code. 
+                    De plus, le professeur de l’époque n’a pas particulièrement pris le temps de l’expliquer et l’a expédié et corrigé très rapidement. 
+                    Il s’agissait, apparemment pour lui d’un exercice très simple.
+                </p>
+                <p>
+                    Cet exercice, je l’ai laissé de côté puis je l’ai oublié pendant plusieurs mois. 
+                    Et puis, lors de mon année de licence dans l’enseignement en 2012, on m’a demandé de réaliser une présentation sur un sujet 
+                    qui pouvait avoir un lien avec les mathématiques. 
+                    Ainsi, j'avias pris la décision de réaliser une présentation sur l’informatique et les mathématiques.
+                </p>
+                <p>
+                    C’est à partir de ce moment précis que cet exercice est devenu un projet personnel. 
+                    En effet, je ne me voyais pas présenter quelque chose sur l’informatique sans montrer une application, même la plus basique. 
+                    J’ai ainsi repris l’exercice et je me suis pris au jeu, si on peut le dire ainsi, de finaliser ce qui avait été commencé lors de cet exercice en licence de robotique.
+                </p>
+                <p>
+                    Il s’agissait pour moi tout simplement de ma 1ère réelle expérience de programmation. 
+                    J’ai finalement réussi à mettre au point un petit jeu suffisamment fonctionnel pour qu’il soit présentable à mon auditoire lors de cette présentation 
+                    sur l’informatique et les mathématiques. 
+                    Il ne correspondait qu’à une partie de cette présentation mais c’était la plus importante car elle correspondait à la dernière partie de cette présentation.
+                </p>
+                <p>
+                    Ainsi, j’ai dû reprendre le code que j’avais réalisé afin de le rendre « lisible », le vulgariser aux yeux d’un public moins initié. 
+                    Pour vulgariser mon explication qui restait très technique pour ce public, j’ai tout simplement expliquer ce que faisait chaque bloc de codes 
+                    de mon application sans trop rentrer dans les détails. Il s’agissait d’intéresser sans faire peur, de simplifier quelque chose de très technique.
+                </p>
+                <p>
+                    Cela a été une expérience très enrichissante pour moi et elle n’est pas inconnu à mon intérêt pour la programmation aujourd’hui.
+                </p>
+                <h5>Compétences utilisées :</h5>
+                <ul>
+                    <li>
+                        Utiliser le langage de programmation Visual Basic
+                    </li>
+                    <li>
+                        Organisation et mise en place d’une séance d’information d’une durée de 1H30
+                    </li>
+                    <li>
+                        Vulgariser
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <script src="intersectionObserver.js"></script>

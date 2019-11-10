@@ -1,73 +1,198 @@
 $(document).ready(function(){
     
-    $( "#quality-organisation > h4" ).mouseenter(function() {
-        $( "#quality-organisation > .material-icons-info" ).css("display", "inline-block");;
-    });
-
-    $( "#quality-organisation > h4" ).mouseleave(function() {
-        $( "#quality-organisation > .material-icons-info" ).css("display", "none");;
-    });
-
-    $( "#quality-organisation > h4").click(function(e) {
+    $( "#quality-organisation").click(function(e) {
         $("#quality-perseverance-description").fadeOut(1);
         $("#quality-patience-description").fadeOut(1);
         $("#quality-organisation-description").fadeIn(500);
-        $("#quality-organisation > h4").addClass("link-clicked");
-        $("#quality-patience > h4").removeClass("link-clicked");
-        $("#quality-perseverance > h4").removeClass("link-clicked");
+        
+        $("#quality-persistence").css("transition-duration", `0.5s`);
+        $("#quality-persistence").css("transform", `translateX(600px)`);
+        $("#quality-patience").css("transition-duration", `0.5s`);
+        $("#quality-patience").css("transform", `translateX(600px)`);
+        $("#quality-organisation").css("transition-duration", `0.5s`);
+        $("#quality-organisation").css("transform", `translateX(600px)`);
+
+        $("#quality-organisation-description").css("transition-duration", `0.5s`);
+        $("#quality-organisation-description").css("transform", `translateX(0px)`);
+        $("#quality-organisation-description").css("opacity", `1`);
+
+        $("#quality-organisation-description > ul > li > .menu-quality-organisation").addClass("link-clicked");
+
+        $("#quality-persistence").fadeOut(1);
+        $("#quality-patience").fadeOut(1);
+        $("#quality-organisation").fadeOut(1);
     });
 
-    $( "#quality-persistence > h4" ).mouseenter(function() {
-        $( "#quality-persistence > .material-icons-info" ).css("display", "inline-block");;
-    });
-
-    $( "#quality-persistence > h4" ).mouseleave(function() {
-        $( "#quality-persistence > .material-icons-info" ).css("display", "none");;
-    });
-
-    $( "#quality-persistence > h4").click(function(e) {
+    $( "#quality-persistence").click(function(e) {
         $("#quality-organisation-description").fadeOut(1);
         $("#quality-patience-description").fadeOut(1);
         $("#quality-perseverance-description").fadeIn(500);
-        $("#quality-persistence > h4").addClass("link-clicked");
-        $("#quality-patience > h4").removeClass("link-clicked");
-        $("#quality-organisation > h4").removeClass("link-clicked");
+
+        $("#quality-persistence").css("transition-duration", `0.5s`);
+        $("#quality-persistence").css("transform", `translateX(600px)`);
+        $("#quality-patience").css("transition-duration", `0.5s`);
+        $("#quality-patience").css("transform", `translateX(600px)`);
+        $("#quality-organisation").css("transition-duration", `0.5s`);
+        $("#quality-organisation").css("transform", `translateX(600px)`);
+
+        $("#quality-perseverance-description").css("transition-duration", `0.5s`);
+        $("#quality-perseverance-description").css("transform", `translateX(0px)`);
+        $("#quality-perseverance-description").css("opacity", `1`);
+
+        $("#quality-perseverance-description > ul > li > .menu-quality-persistence").addClass("link-clicked");
+
+        $("#quality-persistence").fadeOut(1);
+        $("#quality-patience").fadeOut(1);
+        $("#quality-organisation").fadeOut(1);
     });
 
-    $( "#quality-patience > h4" ).mouseenter(function() {
-        $( "#quality-patience > .material-icons-info" ).css("display", "inline-block");;
-    });
-
-    $( "#quality-patience > h4" ).mouseleave(function() {
-        $( "#quality-patience > .material-icons-info" ).css("display", "none");;
-    });
-
-    $( "#quality-patience > h4").click(function(e) {
+    $( "#quality-patience").click(function(e) {
         $("#quality-organisation-description").fadeOut(1);
         $("#quality-perseverance-description").fadeOut(1);
         $("#quality-patience-description").fadeIn(500);
-        $("#quality-patience > h4").addClass("link-clicked");
-        $("#quality-organisation > h4").removeClass("link-clicked");
-        $("#quality-persistence > h4").removeClass("link-clicked");
+        
+        $("#quality-persistence").css("transition-duration", `0.5s`);
+        $("#quality-persistence").css("transform", `translateX(600px)`);
+        $("#quality-patience").css("transition-duration", `0.5s`);
+        $("#quality-patience").css("transform", `translateX(600px)`);
+        $("#quality-organisation").css("transition-duration", `0.5s`);
+        $("#quality-organisation").css("transform", `translateX(600px)`);
+
+        $("#quality-patience-description").css("transition-duration", `0.5s`);
+        $("#quality-patience-description").css("transform", `translateX(0px)`);
+        $("#quality-patience-description").css("opacity", `1`);
+
+        $("#quality-patience-description > ul > li > .menu-quality-patience").addClass("link-clicked");
+
+        $("#quality-persistence").fadeOut(1);
+        $("#quality-patience").fadeOut(1);
+        $("#quality-organisation").fadeOut(1);
+    });
+
+    //To Navigate between description 
+    $(".menu-quality-organisation").click(function(e) {
+        
+        $("#quality-patience-description").fadeOut(1);
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-organisation-description").addClass('magictime slideDownReturn');
+        $("#quality-organisation-description").css("display", `inline-block`);
+        
+        $("#quality-organisation-description > ul > li > .menu-quality-organisation").addClass("link-clicked");
+
+    });
+
+    $(".menu-quality-persistence").click(function(e) {
+        
+        $("#quality-organisation-description").fadeOut(1);
+        $("#quality-patience-description").fadeOut(1);
+        $("#quality-perseverance-description").addClass('magictime slideDownReturn');
+        $("#quality-perseverance-description").css("display", `inline-block`);
+        
+        $("#quality-perseverance-description > ul > li > .menu-quality-persistence").addClass("link-clicked");
+
+    });
+
+    $(".menu-quality-patience").click(function(e) {
+        
+        $("#quality-organisation-description").fadeOut(1);
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-patience-description").addClass('magictime slideDownReturn');
+        $("#quality-patience-description").css("display", `inline-block`);
+        
+        $("#quality-patience-description > ul > li > .menu-quality-patience").addClass("link-clicked");
+
     });
 
     $( ".picture-detailled-description-close").click(function(e) {
-        $("#quality-organisation-description").fadeOut(500);
-        $("#quality-organisation > h4").removeClass("link-clicked");
-        $("#quality-perseverance-description").fadeOut(500);
-        $("#quality-persistence > h4").removeClass("link-clicked");
-        $("#quality-patience-description").fadeOut(500);
-        $("#quality-patience > h4").removeClass("link-clicked");
+        $("#quality-organisation-description").css("transition-duration", `0.4s`);
+        $("#quality-organisation-description").css("transform", `translateX(600px)`);
+        $("#quality-organisation-description").fadeOut(1);
+        
+        $("#quality-perseverance-description").css("transition-duration", `0.4s`);
+        $("#quality-perseverance-description").css("transform", `translateX(600px)`);
+        $("#quality-perseverance-description").fadeOut(1);
+        
+        $("#quality-patience-description").css("transition-duration", `0.4s`);
+        $("#quality-patience-description").css("transform", `translateX(600px)`);
+        $("#quality-patience-description").fadeOut(1);
+        
+        $("#quality-persistence").fadeIn(500);
+        $("#quality-patience").fadeIn(500);
+        $("#quality-organisation").fadeIn(500);
+
+        $("#quality-persistence").css("transition-duration", `0.5s`);
+        $("#quality-persistence").css("transform", `translateX(0px)`);
+        $("#quality-patience").css("transition-duration", `0.5s`);
+        $("#quality-patience").css("transform", `translateX(0px)`);
+        $("#quality-organisation").css("transition-duration", `0.5s`);
+        $("#quality-organisation").css("transform", `translateX(0px)`);
+    });
+
+    //To Navigate between project description
+
+    $( "#1").click(function(e) {
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(500);
+        $("#projects-detailled-description-confidentiality").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
     });
 
     $( "#2").click(function(e) {
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
         $("#projects-detailled-description").fadeIn(500);
+        $("#projects-detailled-description-mini-framework").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#3").click(function(e) {
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(500);
+        $("#projects-detailled-description-dynamic-searchBar").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#4").click(function(e) {
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(500);
+        $("#projects-detailled-description-graphic-maj").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#5").click(function(e) {
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(500);
+        $("#projects-detailled-description-fructos-game").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
     });
 
     $( "#picture-detailled-description-close").click(function(e) {
         $("#projects-detailled-description").fadeOut(500);
+        //To restore scroll bar
+        $("body").css("overflow", "auto");
     });
 
+
+    // To Navigate with carrousel
 
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
