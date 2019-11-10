@@ -495,21 +495,20 @@ nav ul > li.show {
 /*************** To Confidentiality Agreement Install CSS **************/
 
 #projects-detailled-description-confidentiality-container-description{
-    display: inline-block;
-    width: 45%;
-    height: 100%;
     margin: 30px;
     vertical-align: top;
+    text-align: left;
 }
 
 #projects-detailled-description-confidentiality-container-picture{
-    display: inline-block;
+    float: left;
     width: 45%;
     height: 100%;
     margin: 30px;
 }
 
 #projects-detailled-description-confidentiality-picture{
+    float:left;
     width: 100%;
     height: 100%;
 }
@@ -535,23 +534,22 @@ nav ul > li.show {
 /*************** To Mini FrameWork Pop Formulaire CSS ******************/
 
 #projects-detailled-description-mini-framework-container-description{
-    display: inline-block;
-    width: 45%;
-    height: 100%;
     margin: 30px;
     vertical-align: top;
+    text-align: left;
 }
 
 #projects-detailled-description-mini-framework-container-picture{
-    display: inline-block;
+    float: left;
     width: 45%;
     height: 100%;
     margin: 30px;
 }
 
 #projects-detailled-description-mini-framework-picture{
-    width: 100%;
-    height: 100%;
+    float:left;
+    width: 90%;
+    height: 90%;
 }
 
 #projects-detailled-description-mini-framework-container-description > h5 {
@@ -574,23 +572,22 @@ nav ul > li.show {
 /*************** To Dynamic SearchBar CSS ******************/
 
 #projects-detailled-description-searchBar-container-description{
-    display: inline-block;
-    width: 45%;
-    height: 100%;
     margin: 30px;
     vertical-align: top;
+    text-align: left;
 }
 
 #projects-detailled-description-dynamic-searchBar-container-picture{
-    display: inline-block;
+    float: left;
     width: 45%;
     height: 100%;
     margin: 30px;
 }
 
 #projects-detailled-description-dynamic-searchBar-picture{
-    width: 100%;
-    height: 100%;
+    float:left;
+    width: 90%;
+    height: 90%;
 }
 
 #projects-detailled-description-searchBar-container-description > h5 {
@@ -658,21 +655,20 @@ nav ul > li.show {
 /************* End Create Fructos Project CSS *************/
 
 #projects-detailled-description-fructos-game-container-description{
-    display: inline-block;
-    width: 45%;
-    height: 100%;
     margin: 30px;
     vertical-align: top;
+    text-align: left;
 }
 
 #projects-detailled-description-fructos-game-container-picture{
-    display: inline-block;
+    float: left;
     width: 45%;
     height: 100%;
     margin: 30px;
 }
 
 #projects-detailled-description-fructos-game-picture{
+    float:left;
     width: 100%;
     height: 100%;
 }
