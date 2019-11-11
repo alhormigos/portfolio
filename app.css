@@ -87,11 +87,10 @@ body {
 }
 
 #contact{
-    background: url(./img/0_And_1_footer_border.jpg) repeat-x top center/1.1%;
     background-color: rgb(86, 115, 154);
     height: 100%;
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
 }
 
 .contact{
@@ -101,6 +100,18 @@ body {
     transition: transform 0.9s, opacity 0.9s;
 }
 
+.contact-container-animation {
+    background: transparent;
+    background-color: rgb(86, 115, 154);
+    color: white;
+    font-family: 'Open Sans', 'Trebuchet MS', Sans-Serif;
+    font-weight: bold;
+    width: 100%;
+    height : 20px;
+    overflow: hidden;
+    perspective-origin: center left;
+}
+  
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .contact.not-visible{
 	transform: translateX(500px);
