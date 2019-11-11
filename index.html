@@ -105,11 +105,11 @@
                 <h3>Voici quelques traits de personnalités qui me caractérisent</h3>
             </div>
             <div class="container-content" id="container-quality">
-                <div id="quality-persistence" class="children-content">
+                <div id="quality-persistence" class="children-content-quality">
                     <i class="material-icons">done</i>
                     <h4 class="link" title="cliquer pour plus de détail">PERSÉVÉRANCE</h4>
                     <i class="material-icons material-icons-info">info</i>
-                    <div class="children-content-summary">
+                    <div class="children-content-quality-summary">
                         <p>
                             Sans ce trait de caractère, je n’aurais peut-être pas eu la vie professionnelle que j’ai aujourd’hui. 
                             Je sais toujours, au fond de moi, que lorsque je commence un projet, qu’il soit professionnel ou personnel, 
@@ -117,11 +117,11 @@
                         </p>
                     </div>
                 </div>
-                <div id="quality-patience" class="children-content">
+                <div id="quality-patience" class="children-content-quality">
                     <i class="material-icons">hourglass_full</i>
                     <h4 class="link" title="cliquer pour plus de détail">PATIENCE</h4>
                     <i class="material-icons material-icons-info">info</i>
-                    <div class="children-content-summary">
+                    <div class="children-content-quality-summary">
                         <p>
                             Je sais que rien ne se fait sans une bonne dose de patience.
                             À force de patience et de calme, on parvient toujours à un meilleur résultat que si on se
@@ -130,11 +130,11 @@
                         </p>
                     </div>
                 </div>
-                <div id="quality-organisation" class="children-content">
+                <div id="quality-organisation" class="children-content-quality">
                     <i class="material-icons">assignment</i>
                     <h4 class="link" title="cliquer pour plus de détail">ORGANISATION</h4>
                     <i class="material-icons material-icons-info">info</i>
-                    <div class="children-content-summary">
+                    <div class="children-content-quality-summary">
                         <p>
                             Mon organisation et ma rigueur sont souvent mis en avant par mon entourage.
                             Avant même de commencer à travailler sur un projet, il est nécessaire pour 
@@ -144,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div id="quality-perseverance-description" class="description children-content-clicked" style="display :none;">
+            <div id="quality-perseverance-description" class="description children-content-quality-clicked" style="display :none;">
                 <div id="quality-detailled-description-close">
                     <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
                 </div>
@@ -193,7 +193,7 @@
                 </div>
                     
             </div>
-            <div id="quality-patience-description" class="description children-content-clicked" style="display :none;">
+            <div id="quality-patience-description" class="description children-content-quality-clicked" style="display :none;">
                 <div id="quality-detailled-description-close">
                     <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
                 </div>
@@ -243,7 +243,7 @@
                     que la patience permet de gagner du temps face à la précipitation et l'éparpillement.
                 </p>
             </div>
-            <div id="quality-organisation-description" class="description children-content-clicked" style="display :none;">
+            <div id="quality-organisation-description" class="description children-content-quality-clicked" style="display :none;">
                 <div id="quality-detailled-description-close">
                     <img class="picture-detailled-description-close" src="img/closing-cross.png" alt="close_window">
                 </div>
@@ -308,7 +308,7 @@
             <div class="container-content" id="container-skills">
                 <div id="skill_1" class="children-content" >
                     <i class="material-icons">create</i>
-                    <h4>WEB DESIGN</h4>
+                    <h4 class="link">WEB DESIGN</h4>
                     <div class="children-content-summary">
                         <ul>
                             <li>
@@ -326,10 +326,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="children-content">
+                <div id="skill_2" class="children-content">
                     <i class="material-icons">code</i>
-                    <h4>DÉVELOPPEMENT</h4>
-                    <div id="skill_2" class="children-content-summary">
+                    <h4 class="link">DÉVELOPPEMENT</h4>
+                    <div class="children-content-summary">
                         <ul>
                             <li>
                                 - Utilisation de la technologie ASP.Net (WebForms et MVC) et C#
@@ -348,7 +348,7 @@
                 </div>
                 <div id="skill_3" class="children-content">
                     <i class="material-icons">storage</i>
-                    <h4>BASE DE DONNÉES</h4>
+                    <h4 class="link">BASE DE DONNÉES</h4>
                     <div class="children-content-summary">
                         <ul>
                             <li>
@@ -371,7 +371,7 @@
                 </div>
                 <div id="skill_4" class="children-content">
                     <i class="material-icons">school</i>
-                    <h4>FORMATION</h4>
+                    <h4 class="link">FORMATION</h4>
                     <div class="children-content-summary">
                         <ul>
                             <li>
@@ -388,7 +388,7 @@
                 </div>
                 <div id="skill_5" class="children-content">
                     <i class="material-icons">info</i>
-                    <h4>COMPÉTENCES ANNEXES WEB</h4>
+                    <h4 class="link">COMPÉTENCES ANNEXES WEB</h4>
                     <div class="children-content-summary">
                         <ul>
                             <li>
@@ -408,7 +408,7 @@
                 </div>
                 <div id="skill_6" class="children-content">
                     <i class="material-icons">event_note</i>
-                    <h4>GESTION DES PROJETS</h4>
+                    <h4 class="link">GESTION DES PROJETS</h4>
                     <div class="children-content-summary">
                         <ul>
                             <li>
@@ -742,7 +742,7 @@
                     Cette problématique du développement ou du "coding" s'est reposé pour moi au cours de mon année de service civique.
                     En effet, au delà de mon activité d'organisateur et d'animateur de session d'information à destination de responsable d'association,
                     je réalisais d'autres tâche au sein de l'association pour laquelle je travallais.
-                    Je devais, utiliser du code HTML et du code CSS pour publier, quotidiennement, des actualités qui alimenté un site, le portail-humanitaire.
+                    Je devais, utiliser du code HTML et du code CSS pour publier, quotidiennement, des actualités qui alimentaient un site, le portail-humanitaire.
                     J'ai ainsi été rattrapé par le développement et c'est à ce moment que l'idée d'une reconversion professionnelle s'est renforcé et est devenu
                     sérieuse.
                 </p>

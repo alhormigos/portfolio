@@ -132,18 +132,16 @@ body {
     margin:0 15px 30px 15px;
 }
 
+/*** tuiles pour les compétences techniques ****/
+
 .children-content{
     width:100%;
-    height: 270px;
+    height: 380px;
     text-align: left;
     border: 1px solid transparent;
     border-radius: 10px;
     transition-duration: 0.8s;
-}
-
-.children-content:hover{
-    box-shadow: 6px 6px 7px 0px rgba(0,38,150,1);
-    cursor: pointer;
+    padding : 10px;
 }
 
 .children-content > p {
@@ -175,6 +173,183 @@ body {
 #children-content-picture{
     text-align: center;
 }
+
+/***** Test animation bordure ****/
+
+.children-content:hover{
+    animation: border-skills-animate 0.8s linear forwards;
+    cursor: pointer;
+}
+
+@keyframes border-skills-animate{
+    0%{
+        width: 100%;
+        height: 380px;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    10%{
+      width: 100%;
+      height: 380px;
+      border-top-color: #2c7ef1;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-width: 2px;
+    }
+    20%{
+      width: 100%;
+      height: 380px;
+      border-top-color: #2c7ef1;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: #2c7ef1;
+      border-width: 2px;
+    }
+    30%{
+        width: 100%;
+        height: 380px;
+        border-top-color: #2c7ef1;
+        border-bottom-color: #2c7ef1;
+        border-left-color: transparent;
+        border-right-color: #2c7ef1;
+        border-width: 2px;
+      }
+    40%{
+      width: 100%;
+      height: 380px;
+      background-color: rgb(0, 23, 54);
+      border-top-color: #2c7ef1;
+      border-bottom-color: #2c7ef1;
+      border-left-color: #2c7ef1;
+      border-right-color: #2c7ef1;
+      border-width: 2px;
+    }
+    100%{
+        width: 100%;
+        height: 380px;
+        background-color: rgb(0, 23, 54);
+        border-top-color: #2c7ef1;
+        border-bottom-color: #2c7ef1;
+        border-left-color: #2c7ef1;
+        border-right-color: #2c7ef1;
+        border-width: 2px;
+    }
+}
+
+/***** Fin test animation bordure ****/
+
+/*** tuiles pour les qualités humaines ****/
+
+.children-content-quality{
+    width:100%;
+    height: 300px;
+    text-align: left;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+    padding : 10px;
+}
+
+.children-content-quality > p {
+    color: #dadada;
+    text-align: left;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.children-content-quality-clicked{
+    cursor: pointer;
+}
+
+.children-content-quality-summary{
+    display: block;
+    height: 120px;
+}
+
+.children-content-quality-summary > ul > li {
+    color: #dadada;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 1.4em;
+}
+
+#children-content-quality-picture{
+    text-align: center;
+}
+
+/***** Test animation bordure ****/
+
+.children-content-quality:hover{
+    animation: border-quality-animate 0.8s linear forwards;
+    cursor: pointer;
+    
+}
+
+@keyframes border-quality-animate{
+    0%{
+        width: 100%;
+        height: 300px;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    10%{
+      width: 100%;
+      height: 300px;
+      border-top-color: #2c7ef1;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-width: 2px;
+    }
+    20%{
+      width: 100%;
+      height: 300px;
+      border-top-color: #2c7ef1;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: #2c7ef1;
+      border-width: 2px;
+    }
+    30%{
+        width: 100%;
+        height: 300px;
+        border-top-color: #2c7ef1;
+        border-bottom-color: #2c7ef1;
+        border-left-color: transparent;
+        border-right-color: #2c7ef1;
+        border-width: 2px;
+      }
+    40%{
+      background-color: rgb(0, 13, 30);
+      width: 100%;
+      height: 300px;
+      border-top-color: #2c7ef1;
+      border-bottom-color: #2c7ef1;
+      border-left-color: #2c7ef1;
+      border-right-color: #2c7ef1;
+      border-width: 2px;
+    }
+    100%{
+        background-color: rgb(0, 13, 30);
+        width: 100%;
+        height: 300px;
+        border-top-color: #2c7ef1;
+        border-bottom-color: #2c7ef1;
+        border-left-color: #2c7ef1;
+        border-right-color: #2c7ef1;
+        border-width: 2px;
+    }
+}
+
+/***** Fin test animation bordure ****/
 
 .class-bloc{
     min-width: 100%;
