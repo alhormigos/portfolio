@@ -70,6 +70,18 @@ itemcontact.classList.add('not-visible')
 
 observer.observe(document.querySelector('.contact'))
 
+// On le fait pour l'ensemble des items qui ont la classe contact-cube-left
+let itemcontactCubeLeft = document.querySelector('.contact-cube-left')
+itemcontactCubeLeft.classList.add('not-visible')
+
+observer.observe(document.querySelector('.contact-cube-left'))
+
+// // On le fait pour l'ensemble des items qui ont la classe contact-cube-right
+// let itemcontactCubeRight = document.querySelector('.contact-cube-right')
+// itemcontactCubeRight.classList.add('not-visible')
+
+// observer.observe(document.querySelector('.contact-cube-rigth'))
+
 
 // On le fait pour l'ensemble des items qui ont la classe project-container-content
 // let itemProjectContainer = document.querySelector('.project-container-content')

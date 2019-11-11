@@ -108,6 +108,12 @@ body {
     transition: transform 0.9s, opacity 0.9s;
 }
 
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.contact.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
 .contact-container-animation {
     background: transparent;
     background-color: rgb(86, 115, 154);
@@ -119,9 +125,41 @@ body {
     overflow: hidden;
     perspective-origin: center left;
 }
-  
+
+.contact-cube-left{
+    display: inline-block;
+    width:20%;
+    margin-left: -14.5%;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+    transform: translateX(0);
+    opacity:1;
+    transition: transform 0.9s, opacity 0.9s;
+}
+
 /* Ajouté pour la demo avec l'IntersectionObserver */
-.contact.not-visible{
+.contact-cube-left.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.contact-logo{
+    display:inline-block;
+    width:30%;
+    margin-left: 23%;
+}
+
+.contact-cube-right{
+    display: inline-block;
+    width:20%;
+    margin-left:20%;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+    transform: translateX(0);
+    opacity:1;
+    transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.contact-cube-right.not-visible{
 	transform: translateX(500px);
 	opacity: 0;
 }
