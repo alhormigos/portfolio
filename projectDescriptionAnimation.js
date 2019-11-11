@@ -200,8 +200,73 @@ $(document).ready(function(){
     });
 
     $( "#skill_1").click(function(e) {
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
         $("#skills-detailled-description").fadeIn(500);
         $("#skills-detailled-description-design-web").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#skill_2").click(function(e) {
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+        $("#skills-detailled-description-development").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#skill_3").click(function(e) {
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+        $("#skills-detailled-description-bdd").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+    
+    $( "#skill_4").click(function(e) {
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+        $("#skills-detailled-description-formation").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+    
+    $( "#skill_5").click(function(e) {
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+        $("#skills-detailled-description-other").fadeIn(500);
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+    
+    $( "#skill_6").click(function(e) {
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+        $("#skills-detailled-description-project").fadeIn(500);
         //To freeze scroll bar
         $("body").css("overflow", "hidden");
     });
