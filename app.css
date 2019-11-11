@@ -75,7 +75,7 @@ body {
 }
 
 #big-title-info{
-    margin-top: 1%;
+    margin-top: 18%;
     text-align: center;
     font-size:24px;
 }
@@ -91,6 +91,14 @@ body {
     height: 100%;
     padding-top: 40px !important;
     padding-bottom: 40px !important;
+}
+
+.contact-logo{
+    border:2px solid rgb(0, 23, 54);
+    border-radius:50%;
+    display: inline-block;
+    width:350px;
+    height:350px;
 }
 
 .contact{
@@ -492,6 +500,13 @@ i{
     color: lightgrey;
     font-family: 'Open Sans', 'Trebuchet MS', Sans-Serif;
     vertical-align: 20%;
+    transition-duration: 0.8s;
+}
+
+.infos-values > a:hover{
+    font-weight: bold;
+    color:rgb(0, 37, 44);
+    transition-duration: 0.8s;
 }
 
 .infos-values {
