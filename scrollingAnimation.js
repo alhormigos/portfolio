@@ -40,6 +40,14 @@ itemsContainer.forEach(function(itemContainer){
 	observer.observe(itemContainer)
 })
 
+// On le fait pour l'ensemble des items qui ont la classe container-content-quality
+
+let itemsContainerQuality = document.querySelectorAll('.container-content-quality')
+itemsContainerQuality.forEach(function(itemsContainerQuality){
+	itemsContainerQuality.classList.add('not-visible')
+	observer.observe(itemsContainerQuality)
+})
+
 // On le fait pour l'ensemble des items qui ont la classe a-propos-de-moi-container
 let itemAproposDeMoi = document.querySelector('.a-propos-de-moi-container')
 itemAproposDeMoi.classList.add('not-visible')

@@ -189,6 +189,26 @@ body {
     margin:0 15px 30px 15px;
 }
 
+.container-content-quality{
+    display: flex;
+    /* Ajouté pour la demo avec l'IntersectionObserver */
+	transform: translateX(0);
+	opacity:1;
+	transition: transform 0.9s, opacity 0.9s;
+}
+
+/* Ajouté pour la demo avec l'IntersectionObserver */
+.container-content-quality.not-visible{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.container-content-quality>div {
+    flex: 0 30%;
+    box-sizing:border-box;
+    margin:0 15px 30px 15px;
+}
+
 /*** tuiles pour les compétences techniques ****/
 
 .children-content{
@@ -308,6 +328,7 @@ body {
     border-radius: 10px;
     transition-duration: 0.8s;
     padding : 10px;
+    font-size: 14px;
 }
 
 .children-content-quality > p {

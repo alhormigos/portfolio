@@ -3,6 +3,7 @@ $(document).ready(function(){
     $( "#quality-organisation").click(function(e) {
         $("#quality-perseverance-description").fadeOut(1);
         $("#quality-patience-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
         $("#quality-organisation-description").fadeIn(500);
         
         $("#quality-persistence").css("transition-duration", `0.5s`);
@@ -11,6 +12,8 @@ $(document).ready(function(){
         $("#quality-patience").css("transform", `translateX(600px)`);
         $("#quality-organisation").css("transition-duration", `0.5s`);
         $("#quality-organisation").css("transform", `translateX(600px)`);
+        $("#quality-pedagogie").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie").css("transform", `translateX(600px)`);
 
         $("#quality-organisation-description").css("transition-duration", `0.5s`);
         $("#quality-organisation-description").css("transform", `translateX(0px)`);
@@ -20,12 +23,14 @@ $(document).ready(function(){
 
         $("#quality-persistence").fadeOut(1);
         $("#quality-patience").fadeOut(1);
+        $("#quality-pedagogie").fadeOut(1);
         $("#quality-organisation").fadeOut(1);
     });
 
     $( "#quality-persistence").click(function(e) {
         $("#quality-organisation-description").fadeOut(1);
         $("#quality-patience-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
         $("#quality-perseverance-description").fadeIn(500);
 
         $("#quality-persistence").css("transition-duration", `0.5s`);
@@ -34,6 +39,8 @@ $(document).ready(function(){
         $("#quality-patience").css("transform", `translateX(600px)`);
         $("#quality-organisation").css("transition-duration", `0.5s`);
         $("#quality-organisation").css("transform", `translateX(600px)`);
+        $("#quality-pedagogie").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie").css("transform", `translateX(600px)`);
 
         $("#quality-perseverance-description").css("transition-duration", `0.5s`);
         $("#quality-perseverance-description").css("transform", `translateX(0px)`);
@@ -43,12 +50,14 @@ $(document).ready(function(){
 
         $("#quality-persistence").fadeOut(1);
         $("#quality-patience").fadeOut(1);
+        $("#quality-pedagogie").fadeOut(1);
         $("#quality-organisation").fadeOut(1);
     });
 
     $( "#quality-patience").click(function(e) {
         $("#quality-organisation-description").fadeOut(1);
         $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
         $("#quality-patience-description").fadeIn(500);
         
         $("#quality-persistence").css("transition-duration", `0.5s`);
@@ -57,6 +66,8 @@ $(document).ready(function(){
         $("#quality-patience").css("transform", `translateX(600px)`);
         $("#quality-organisation").css("transition-duration", `0.5s`);
         $("#quality-organisation").css("transform", `translateX(600px)`);
+        $("#quality-pedagogie").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie").css("transform", `translateX(600px)`);
 
         $("#quality-patience-description").css("transition-duration", `0.5s`);
         $("#quality-patience-description").css("transform", `translateX(0px)`);
@@ -66,6 +77,34 @@ $(document).ready(function(){
 
         $("#quality-persistence").fadeOut(1);
         $("#quality-patience").fadeOut(1);
+        $("#quality-pedagogie").fadeOut(1);
+        $("#quality-organisation").fadeOut(1);
+    });
+
+    $( "#quality-pedagogie").click(function(e) {
+        $("#quality-organisation-description").fadeOut(1);
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-patience-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeIn(500);
+        
+        $("#quality-persistence").css("transition-duration", `0.5s`);
+        $("#quality-persistence").css("transform", `translateX(600px)`);
+        $("#quality-patience").css("transition-duration", `0.5s`);
+        $("#quality-patience").css("transform", `translateX(600px)`);
+        $("#quality-organisation").css("transition-duration", `0.5s`);
+        $("#quality-organisation").css("transform", `translateX(600px)`);
+        $("#quality-pedagogie").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie").css("transform", `translateX(600px)`);
+
+        $("#quality-pedagogie-description").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie-description").css("transform", `translateX(0px)`);
+        $("#quality-pedagogie-description").css("opacity", `1`);
+
+        $("#quality-pedagogie-description > ul > li > .menu-quality-pedagogie").addClass("link-clicked");
+
+        $("#quality-persistence").fadeOut(1);
+        $("#quality-patience").fadeOut(1);
+        $("#quality-pedagogie").fadeOut(1);
         $("#quality-organisation").fadeOut(1);
     });
 
@@ -74,6 +113,7 @@ $(document).ready(function(){
         
         $("#quality-patience-description").fadeOut(1);
         $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
         $("#quality-organisation-description").addClass('magictime slideDownReturn');
         $("#quality-organisation-description").css("display", `inline-block`);
         
@@ -85,6 +125,7 @@ $(document).ready(function(){
         
         $("#quality-organisation-description").fadeOut(1);
         $("#quality-patience-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
         $("#quality-perseverance-description").addClass('magictime slideDownReturn');
         $("#quality-perseverance-description").css("display", `inline-block`);
         
@@ -96,10 +137,23 @@ $(document).ready(function(){
         
         $("#quality-organisation-description").fadeOut(1);
         $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
         $("#quality-patience-description").addClass('magictime slideDownReturn');
         $("#quality-patience-description").css("display", `inline-block`);
         
         $("#quality-patience-description > ul > li > .menu-quality-patience").addClass("link-clicked");
+
+    });
+
+    $(".menu-quality-pedagogie").click(function(e) {
+        
+        $("#quality-organisation-description").fadeOut(1);
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-patience-description").fadeOut(1);
+        $("#quality-pedagogie-description").addClass('magictime slideDownReturn');
+        $("#quality-pedagogie-description").css("display", `inline-block`);
+        
+        $("#quality-pedagogie-description > ul > li > .menu-quality-pedagogie").addClass("link-clicked");
 
     });
 
@@ -116,9 +170,14 @@ $(document).ready(function(){
         $("#quality-patience-description").css("transform", `translateX(600px)`);
         $("#quality-patience-description").fadeOut(1);
         
+        $("#quality-pedagogie-description").css("transition-duration", `0.4s`);
+        $("#quality-pedagogie-description").css("transform", `translateX(600px)`);
+        $("#quality-pedagogie-description").fadeOut(1);
+        
         $("#quality-persistence").fadeIn(500);
         $("#quality-patience").fadeIn(500);
         $("#quality-organisation").fadeIn(500);
+        $("#quality-pedagogie").fadeIn(500);
 
         $("#quality-persistence").css("transition-duration", `0.5s`);
         $("#quality-persistence").css("transform", `translateX(0px)`);
@@ -126,6 +185,8 @@ $(document).ready(function(){
         $("#quality-patience").css("transform", `translateX(0px)`);
         $("#quality-organisation").css("transition-duration", `0.5s`);
         $("#quality-organisation").css("transform", `translateX(0px)`);
+        $("#quality-pedagogie").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie").css("transform", `translateX(0px)`);
     });
 
     //To Navigate between project description
