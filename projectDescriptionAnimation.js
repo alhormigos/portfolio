@@ -262,9 +262,6 @@ $(document).ready(function(){
 
     $( "#skill_1").click(function(e) {
 
-        $("#skills-detailled-description-design-web").removeClass('animated bounceOutRight');
-        $("#skills-detailled-description-design-web").addClass('animated bounceInLeft');
-
         $("#skills-detailled-description-development").fadeOut(1);
         $("#skills-detailled-description-bdd").fadeOut(1);
         $("#skills-detailled-description-formation").fadeOut(1);
@@ -272,6 +269,13 @@ $(document).ready(function(){
         $("#skills-detailled-description-project").fadeOut(1);
         $("#skills-detailled-description").fadeIn(500);
         $("#skills-detailled-description-design-web").fadeIn(500);
+
+        
+        $("#skills-detailled-description-design-web").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-design-web").addClass('animated bounceInLeft');
+        
+        $("#skills-detailled-description").css("overflow", "scroll");
+
         //To freeze scroll bar
         $("body").css("overflow", "hidden");
     });
@@ -280,6 +284,7 @@ $(document).ready(function(){
         
         $("#skills-detailled-description-development").removeClass('animated bounceOutRight');
         $("#skills-detailled-description-development").addClass('animated bounceInLeft');
+        $('#skills-detailled-description').animate({scrollTop:0}, '1', 'swing');
 
         $("#skills-detailled-description-design-web").fadeOut(1);
         $("#skills-detailled-description-bdd").fadeOut(1);
