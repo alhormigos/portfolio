@@ -992,6 +992,7 @@ nav ul > li.show {
 }
 
 #skills-detailled-description-close{
+    cursor: pointer;
     text-align: right;
     padding: 10px;
 }
@@ -1029,6 +1030,11 @@ nav ul > li.show {
 
 #skills-detailled-description-design-web-container-description > ul{
     font-size: 14px;
+    display: inline-block;
+}
+
+#skills-detailled-description-design-web-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** To Confidentiality Agreement Install CSS **************/
@@ -1066,6 +1072,11 @@ nav ul > li.show {
 
 #skills-detailled-description-development-container-description > ul{
     font-size: 14px;
+    display: inline-block;
+}
+
+#skills-detailled-description-development-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** To Confidentiality Agreement Install CSS **************/
@@ -1103,6 +1114,11 @@ nav ul > li.show {
 
 #skills-detailled-description-bdd-container-description > ul{
     font-size: 14px;
+    display: inline-block;
+}
+
+#skills-detailled-description-bdd-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** To Confidentiality Agreement Install CSS **************/
@@ -1140,6 +1156,11 @@ nav ul > li.show {
 
 #skills-detailled-description-formation-container-description > ul{
     font-size: 14px;
+    display: inline-block;
+}
+
+#skills-detailled-description-formation-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** To Confidentiality Agreement Install CSS **************/
@@ -1177,6 +1198,11 @@ nav ul > li.show {
 
 #skills-detailled-description-other-container-description > ul{
     font-size: 14px;
+    display: inline-block;
+}
+
+#skills-detailled-description-other-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** To Confidentiality Agreement Install CSS **************/
@@ -1214,6 +1240,11 @@ nav ul > li.show {
 
 #skills-detailled-description-project-container-description > ul{
     font-size: 14px;
+    display: inline-block;
+}
+
+#skills-detailled-description-project-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** To Confidentiality Agreement Install CSS **************/

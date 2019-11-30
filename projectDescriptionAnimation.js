@@ -261,6 +261,10 @@ $(document).ready(function(){
     });
 
     $( "#skill_1").click(function(e) {
+
+        $("#skills-detailled-description-design-web").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-design-web").addClass('animated bounceInLeft');
+
         $("#skills-detailled-description-development").fadeOut(1);
         $("#skills-detailled-description-bdd").fadeOut(1);
         $("#skills-detailled-description-formation").fadeOut(1);
@@ -273,6 +277,10 @@ $(document).ready(function(){
     });
 
     $( "#skill_2").click(function(e) {
+        
+        $("#skills-detailled-description-development").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-development").addClass('animated bounceInLeft');
+
         $("#skills-detailled-description-design-web").fadeOut(1);
         $("#skills-detailled-description-bdd").fadeOut(1);
         $("#skills-detailled-description-formation").fadeOut(1);
@@ -331,6 +339,39 @@ $(document).ready(function(){
         //To freeze scroll bar
         $("body").css("overflow", "hidden");
     });
+
+    // To navigate between skills and realisation (circulate navigation)
+
+    $( "#skill-design-web-to-graphic-maj").click(function(e) {
+        $("#skills-detailled-description-design-web").addClass('animated bounceOutRight');
+
+        $("#skills-detailled-description").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+
+        $("#projects-detailled-description-graphic-maj").fadeIn(1);
+        $("#projects-detailled-description-graphic-maj").addClass('animated bounceInLeft');
+    });
+
+    $( "#skills-detailled-description-development").click(function(e) {
+        $("#skills-detailled-description-development").addClass('animated bounceOutRight');
+
+        $("#skills-detailled-description").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+
+        $("#projects-detailled-description-mini-framework").fadeIn(1);
+        $("#projects-detailled-description-mini-framework").addClass('animated bounceInLeft');
+    });
+
     // To Navigate with carrousel
 
     var sync1 = $("#sync1");
