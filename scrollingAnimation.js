@@ -55,10 +55,10 @@ itemAproposDeMoi.classList.add('not-visible')
 observer.observe(document.querySelector('.a-propos-de-moi-container'))
 
 // On le fait pour l'ensemble des items qui ont la classe chantier
-let itemchantier = document.querySelector('.chantier')
-itemchantier.classList.add('not-visible')
+// let itemchantier = document.querySelector('.chantier')
+// itemchantier.classList.add('not-visible')
 
-observer.observe(document.querySelector('.chantier'))
+// observer.observe(document.querySelector('.chantier'))
 
 // On le fait pour l'ensemble des items qui ont la classe tiles
 let itemTiles = document.querySelector('.tiles')

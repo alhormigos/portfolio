@@ -373,7 +373,7 @@ $(document).ready(function(){
         $("#projects-detailled-description-graphic-maj").addClass('animated bounceInLeft');
     });
 
-    $( "#skills-detailled-description-development").click(function(e) {
+    $( "#skill-development-to-mini-framework").click(function(e) {
         $("#skills-detailled-description-development").addClass('animated bounceOutRight');
 
         $("#skills-detailled-description").fadeOut(1);
