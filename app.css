@@ -787,6 +787,10 @@ nav ul > li.show {
     font-size: 14px;
 }
 
+#projects-detailled-description-confidentiality-container-description > ul > li{
+    margin-bottom: 14px;
+}
+
 /*************** End Confidentiality Agreement Install CSS ******************/
 
 
@@ -824,6 +828,10 @@ nav ul > li.show {
 
 #projects-detailled-description-mini-framework-container-description > ul{
     font-size: 14px;
+}
+
+#projects-detailled-description-mini-framework-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /*************** End Mini FrameWork Pop Formulaire CSS ******************/
@@ -869,6 +877,10 @@ nav ul > li.show {
     font-size: 14px;
 }
 
+#projects-detailled-description-searchBar-container-description > ul > li{
+    margin-bottom: 14px;
+}
+
 /*************** End Dynamic SearchBar CSS ******************/
 
 /************* To Dynamic graphical Update Atrium CSS **************/
@@ -912,6 +924,10 @@ nav ul > li.show {
     font-size: 14px;
 }
 
+#projects-detailled-description-graphic-maj-container-description > ul > li{
+    margin-bottom: 14px;
+}
+
 /************* End Create Fructos Project CSS *************/
 
 #projects-detailled-description-fructos-game-container-description{
@@ -950,6 +966,10 @@ nav ul > li.show {
 
 #projects-detailled-description-fructos-game-container-description > ul{
     font-size: 14px;
+}
+
+#projects-detailled-description-fructos-game-container-description > ul > li{
+    margin-bottom: 14px;
 }
 
 /************* To Create Fructos Project CSS **************/
