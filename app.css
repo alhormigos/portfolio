@@ -467,13 +467,13 @@ body {
 }
 
 .description > ul {
-    list-style-type: none;
     text-align: left;
 }
 
 .description > ul > li {
     display: inline;
     margin-right: 30px;
+    font-size: 14px;
 }
 
 .description > h3 {
@@ -485,12 +485,26 @@ body {
     text-decoration: underline;
 }
 
+.description > h5 {
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-left: 40px;
+    font-size : 15px;
+    text-decoration: underline;
+}
+
 .description > p {
     color: #dadada;
     text-align: left;
     margin-left: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+
+.descriptionLink {
+    margin-left : 20px;
+    list-style-type: disc;
 }
 
 .logo-deco {

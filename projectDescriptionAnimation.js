@@ -769,6 +769,184 @@ $(document).ready(function(){
         $("#skills-detailled-description-formation").addClass('animated bounceInLeft');
     });
 
+    // To Navigate between soft skill and project
+
+    $( "#soft-skill-perseverance-to-miniFrameWork").click(function(e) {
+        $("#projects-detailled-description-mini-framework").addClass('animated bounceOutRight');
+
+        $("#skills-detailled-description").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+
+        $("#projects-detailled-description-mini-framework").fadeIn(1);
+        $("#projects-detailled-description-mini-framework").removeClass('animated bounceOutRight');
+        $("#projects-detailled-description-mini-framework").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-perseverance-to-development").click(function(e) {
+        $("#projects-detailled-description").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-graphic-maj").fadeOut(1);
+        
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+
+        $("#skills-detailled-description-development").fadeIn(1);
+        $("#skills-detailled-description-development").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-development").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-patience-to-dynamic-search-bar").click(function(e) {
+        $("#projects-detailled-description-dynamic-searchBar").addClass('animated bounceOutRight');
+
+        $("#skills-detailled-description").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+
+        $("#projects-detailled-description-dynamic-searchBar").fadeIn(1);
+        $("#projects-detailled-description-dynamic-searchBar").removeClass('animated bounceOutRight');
+        $("#projects-detailled-description-dynamic-searchBar").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-patience-to-formation").click(function(e) {
+        $("#projects-detailled-description").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-graphic-maj").fadeOut(1);
+        
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+
+        $("#skills-detailled-description-project").fadeIn(1);
+        $("#skills-detailled-description-project").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-project").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-organisation-to-graphic-maj").click(function(e) {
+        $("#projects-detailled-description-graphic-maj").addClass('animated bounceOutRight');
+
+        $("#skills-detailled-description").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+
+        $("#projects-detailled-description-graphic-maj").fadeIn(1);
+        $("#projects-detailled-description-graphic-maj").removeClass('animated bounceOutRight');
+        $("#projects-detailled-description-graphic-maj").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-organisation-to-bdd").click(function(e) {
+        $("#projects-detailled-description").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-graphic-maj").fadeOut(1);
+        
+        $("#skills-detailled-description-formation").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+
+        $("#skills-detailled-description-bdd").fadeIn(1);
+        $("#skills-detailled-description-bdd").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-bdd").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-pedagogie-to-fructos-game").click(function(e) {
+        $("#projects-detailled-description-fructos-game").addClass('animated bounceOutRight');
+
+        $("#skills-detailled-description").fadeOut(1);
+        $("#projects-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-graphic-maj").fadeOut(1);
+
+        $("#projects-detailled-description-fructos-game").fadeIn(1);
+        $("#projects-detailled-description-fructos-game").removeClass('animated bounceOutRight');
+        $("#projects-detailled-description-fructos-game").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
+    $( "#soft-skill-pedagogie-to-formation").click(function(e) {
+        $("#projects-detailled-description").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(1);
+
+        $("#projects-detailled-description-confidentiality").fadeOut(1);
+        $("#projects-detailled-description-dynamic-searchBar").fadeOut(1);
+        $("#projects-detailled-description-fructos-game").fadeOut(1);
+        $("#projects-detailled-description-mini-framework").fadeOut(1);
+        $("#projects-detailled-description-dynamic-graphic-maj").fadeOut(1);
+        
+        $("#skills-detailled-description-bdd").fadeOut(1);
+        $("#skills-detailled-description-project").fadeOut(1);
+        $("#skills-detailled-description-development").fadeOut(1);
+        $("#skills-detailled-description-other").fadeOut(1);
+        $("#skills-detailled-description-design-web").fadeOut(1);
+        $("#skills-detailled-description").fadeIn(500);
+
+        $("#skills-detailled-description-formation").fadeIn(1);
+        $("#skills-detailled-description-formation").removeClass('animated bounceOutRight');
+        $("#skills-detailled-description-formation").addClass('animated bounceInLeft');
+
+        //To freeze scroll bar
+        $("body").css("overflow", "hidden");
+    });
+
     // To Navigate with carrousel
 
     var sync1 = $("#sync1");
