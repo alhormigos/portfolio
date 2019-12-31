@@ -799,10 +799,12 @@ nav ul > li.show {
 
 #projects-detailled-description-confidentiality-container-description > ul{
     font-size: 14px;
+    margin-left: 50%;
 }
 
 #projects-detailled-description-confidentiality-container-description > ul > li{
     margin-bottom: 14px;
+    
 }
 
 /*************** End Confidentiality Agreement Install CSS ******************/
@@ -842,6 +844,7 @@ nav ul > li.show {
 
 #projects-detailled-description-mini-framework-container-description > ul{
     font-size: 14px;
+    margin-left: 50%;
 }
 
 #projects-detailled-description-mini-framework-container-description > ul > li{
@@ -889,6 +892,7 @@ nav ul > li.show {
 
 #projects-detailled-description-searchBar-container-description > ul{
     font-size: 14px;
+    margin-left: 50%;
 }
 
 #projects-detailled-description-searchBar-container-description > ul > li{
@@ -980,6 +984,7 @@ nav ul > li.show {
 
 #projects-detailled-description-fructos-game-container-description > ul{
     font-size: 14px;
+    margin-left: 50%;
 }
 
 #projects-detailled-description-fructos-game-container-description > ul > li{
