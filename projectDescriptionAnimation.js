@@ -989,6 +989,46 @@ $(document).ready(function(){
         $("body").css("overflow", "auto");
     });
 
+    $( "#skill-bdd-to-organisation").click(function(e) {
+        $("#projects-detailled-description").fadeOut(1);
+        $("#skills-detailled-description").fadeOut(1);
+
+        $("#quality-perseverance-description").fadeOut(1);
+        $("#quality-pedagogie-description").fadeOut(1);
+        $("#quality-patience-description").fadeOut(500);
+        $("#quality-organisation-description").fadeIn(500);
+        
+        $("#quality-persistence").css("transition-duration", `0.5s`);
+        $("#quality-persistence").css("transform", `translateX(600px)`);
+        $("#quality-patience").css("transition-duration", `0.5s`);
+        $("#quality-patience").css("transform", `translateX(600px)`);
+        $("#quality-organisation").css("transition-duration", `0.5s`);
+        $("#quality-organisation").css("transform", `translateX(600px)`);
+        $("#quality-pedagogie").css("transition-duration", `0.5s`);
+        $("#quality-pedagogie").css("transform", `translateX(600px)`);
+
+        $("#quality-organisation-description").css("transition-duration", `0.5s`);
+        $("#quality-organisation-description").css("transform", `translateX(0px)`);
+        $("#quality-organisation-description").css("opacity", `1`);
+
+        $("#quality-organisation-description > ul > li > .menu-quality-organisation").addClass("link-clicked");
+
+        $("#quality-persistence").fadeOut(1);
+        $("#quality-patience").fadeOut(1);
+        $("#quality-pedagogie").fadeOut(1);
+        $("#quality-organisation").fadeOut(1);
+        
+        //To Scroll on quality position
+        $('html, body').stop().animate({
+            scrollTop: $('#container-quality').offset().top
+        }, 600, function() {
+                location.hash = '#container-quality'; //attach the hash (#jumptarget) to the pageurl
+        });
+        
+        //To unFreeze scroll bar
+        $("body").css("overflow", "auto");
+    });
+
     $( "#skill-development-to-perseverance").click(function(e) {
         $("#projects-detailled-description").fadeOut(1);
         $("#skills-detailled-description").fadeOut(1);
