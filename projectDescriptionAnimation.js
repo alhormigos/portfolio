@@ -1472,4 +1472,27 @@ $(document).ready(function(){
         var number = $(this).index();
         sync1.data('owl.carousel').to(number, 300, true);
     });
+
+    
+    // To Navigate on hambuger menu 
+
+        // Display menu on hamburger-click
+
+    $('#menu-smartphone').click(function(e) {
+
+        console.log($('.navigation').css('display'));
+        if($('.navigation').css('display') == 'none'){
+            $('.navigation').css('display', 'block');
+            $('#menu-smartphone').addClass('smarthpone-actif');
+            $('.smarthpone-navigation > p').addClass('smarthpone-actif');
+        }
+        else{
+            $('.navigation').css('display', 'none');
+            $('#menu-smartphone').removeClass('smarthpone-actif');
+            $('.smarthpone-navigation > p').removeClass('smarthpone-actif');
+        }
+            
+
+    });
+
 });
