@@ -1414,7 +1414,7 @@ nav ul > li.show {
  
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .timeline-container.not-visible{
-    transform: translateX(200px);
+    transform: translateX(100px);
     opacity: 0;
 }
 
