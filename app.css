@@ -1608,10 +1608,10 @@ nav ul > li.show {
     }
 }
 
-
+ 
 @media screen and (max-width: 1200px){
     .menu-description-link{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -1657,6 +1657,216 @@ nav ul > li.show {
     }
 }
 
+/********************** Responsive adapation tablet ******************************/
+
+@media screen and (min-width: 751px) and (max-width: 1250px) {
+
+    .class-bloc {
+        min-width: 100%;
+        margin-bottom: 40px;
+        margin-left: 15%;
+    }
+    
+    .contact-cube-left {
+        display: none;
+        width: 20%;
+        margin-left: -14.5%;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.9s, opacity 0.9s;
+    }
+
+    .contact-cube-right {
+        display: none;
+        width: 20%;
+        margin-left: 20%;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.9s, opacity 0.9s;
+    }
+
+    #contact {
+        background-color: rgb(86, 115, 154);
+        height: 100%;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+        margin-left: -15%;
+    }
+    
+    .contact-logo {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .container-content-quality {
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.9s, opacity 0.9s;
+    }
+
+    .container-content-quality>div {
+        flex: 0 40%;
+        box-sizing: border-box;
+        margin: 0 15px 0px 15px;
+    }
+
+    .description > ul > li {
+        display: inline;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    #container-logo {
+        width: 30%;
+        max-height: 80%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        padding-left: 25%;
+    }
+
+    h4 {
+        display: inline-block;
+        font-weight: bolder;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 16px;
+        vertical-align: 20%;
+    }
+
+    #main > section {
+        position: relative;
+        padding: 80px 5% 100px 25%;
+        min-height: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #projects-detailled-description-confidentiality-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-confidentiality-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-dynamic-searchBar-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-fructos-game-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-fructos-game-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-graphic-maj-container-picture {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-graphic-maj-container-description {
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+        vertical-align: top;
+    }
+
+    #projects-detailled-description-searchBar-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-mini-framework-container-picture {
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-mini-framework-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #skills-detailled-description-bdd-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-design-web-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-development-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-formation-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-other-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-project-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+}
+
+/********************** End Responsive adapation tablet ******************************/
 
 
 /********************** Responsive adapation smartphone ******************************/
@@ -1667,7 +1877,7 @@ nav ul > li.show {
     display: none;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
 
     .a-propos-de-moi-container-picture > img {
         float:left;
@@ -1698,7 +1908,7 @@ nav ul > li.show {
         width: 100%;
         margin-left: 0%;
     }
-
+    
     .container-content-quality {
         display: flex;
         flex-wrap: wrap;
