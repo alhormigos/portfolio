@@ -23,7 +23,7 @@ a{
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .a-propos-de-moi-container.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -43,6 +43,9 @@ a{
 
 .a-propos-de-moi-container-picture > img{
     border-radius : 100px;
+    float:left; 
+    width:15%; 
+    height: 15%;
     margin-top: 10px;
     margin-left: 40px;
     margin-right: 15px;
@@ -110,7 +113,7 @@ body {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .contact.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -138,7 +141,7 @@ body {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .contact-cube-left.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -160,7 +163,7 @@ body {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .contact-cube-right.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -179,7 +182,7 @@ body {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .container-content.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -199,7 +202,7 @@ body {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .container-content-quality.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -456,7 +459,7 @@ body {
 }
 
 .chantier.not-visible{
-    transform: translateX(500px);
+    transform: translateX(200px);
     opacity: 0;
 }
 
@@ -1411,7 +1414,7 @@ nav ul > li.show {
  
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .timeline-container.not-visible{
-    transform: translateX(500px);
+    transform: translateX(200px);
     opacity: 0;
 }
 
@@ -1529,7 +1532,7 @@ nav ul > li.show {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .tiles.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -1579,7 +1582,7 @@ nav ul > li.show {
 
 /* Ajouté pour la demo avec l'IntersectionObserver */
 .title.not-visible{
-	transform: translateX(500px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 
@@ -1664,7 +1667,73 @@ nav ul > li.show {
     display: none;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
+
+    .a-propos-de-moi-container-picture > img {
+        float:left;
+        width: 75%;
+        height: 15%;
+    }
+
+    .contact-cube-left {
+        display: none;
+        width: 20%;
+        margin-left: -14.5%;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.9s, opacity 0.9s;
+    }
+
+    .contact-cube-right {
+        display: none;
+        width: 20%;
+        margin-left: 20%;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.9s, opacity 0.9s;
+    }
+
+    .contact-logo {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .container-content-quality {
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.9s, opacity 0.9s;
+    }
+
+    .container-content-quality>div {
+        flex: 0 100%;
+        box-sizing: border-box;
+        margin: 0 15px 0 15px;
+    }
+
+    .description > h5 {
+        font-weight: bold;
+        text-align: left;
+        color: white;
+        margin-left: 40px;
+        font-size: 12px;
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h4 {
+        display: inline-block;
+        font-weight: bolder;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 15px;
+        vertical-align: 20%;
+    }
 
     .smarthpone-actif{
         transition-duration : 0.1s;
@@ -1684,6 +1753,14 @@ nav ul > li.show {
         display: inline-block;
         width: 300px;
         height: 300px;
+    }
+
+    #main > section {
+        position: relative;
+        padding: 80px 5% 100px 10%;
+        min-height: 100%;
+        text-align: center;
+        overflow: hidden;
     }
 
     .material-icons-smartphone{
@@ -1725,6 +1802,121 @@ nav ul > li.show {
         display: none;
     }
 
+    .picture-quality {
+        height: 220px;
+        width: 220px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    #projects-detailled-description-confidentiality-container-picture {
+        float: left;
+        width: 80%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-confidentiality-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-dynamic-searchBar-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-searchBar-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-fructos-game-container-picture {
+        float: left;
+        width: 80%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-fructos-game-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-graphic-maj-container-picture {
+        display: inline-block;
+        width: 98%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #projects-detailled-description-graphic-maj-container-description {
+        display: inline-block;
+        width: 85%;
+        height: 100%;
+        margin: 30px;
+        vertical-align: top;
+    }
+
+    #projects-detailled-description-mini-framework-container-description > ul {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    #projects-detailled-description-mini-framework-container-picture {
+        float: left;
+        width: 90%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-bdd-container-picture {
+        float: left;
+        width: 85%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-design-web-container-picture {
+        float: left;
+        width: 85%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-development-container-picture {
+        float: left;
+        width: 80%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-formation-container-picture {
+        float: left;
+        width: 85%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-other-container-picture {
+        float: left;
+        width: 85%;
+        height: 100%;
+        margin: 30px;
+    }
+
+    #skills-detailled-description-project-container-picture {
+        float: left;
+        width: 85%;
+        height: 100%;
+        margin: 30px;
+    }
     .smarthpone-navigation{
         position :fixed;
         top: 0;

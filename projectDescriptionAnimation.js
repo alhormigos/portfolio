@@ -1480,7 +1480,6 @@ $(document).ready(function(){
 
     $('#menu-smartphone').click(function(e) {
 
-        console.log($('.navigation').css('display'));
         if($('.navigation').css('display') == 'none'){
             $('.navigation').css('display', 'block');
             $('#menu-smartphone').addClass('smarthpone-actif');
